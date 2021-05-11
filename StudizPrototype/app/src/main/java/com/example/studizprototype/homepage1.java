@@ -36,18 +36,14 @@ public class homepage1 extends AppCompatActivity {
             "image07", "image08", "image09",
             "image10", "image11", "image12"
     };
-    /*
+
     int[] images = {
             R.drawable.image01, R.drawable.image02, R.drawable.image03,
             R.drawable.image04, R.drawable.image05, R.drawable.image06,
             R.drawable.image07, R.drawable.image08, R.drawable.image09,
             R.drawable.image10, R.drawable.image11, R.drawable.image12
     };
-
-*/
-    //Placeholders
-    int[] images = {R.drawable.image1, R.drawable.image2, R.drawable.image3,
-            R.drawable.image4, R.drawable.image5, R.drawable.image6};
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
