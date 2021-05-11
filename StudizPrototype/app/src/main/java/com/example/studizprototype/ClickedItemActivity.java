@@ -13,7 +13,6 @@ public class ClickedItemActivity extends AppCompatActivity {
     ImageView imageView;
     TextView textView;
 
-    //Change
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

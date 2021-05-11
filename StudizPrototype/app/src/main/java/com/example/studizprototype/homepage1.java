@@ -3,6 +3,7 @@ package com.example.studizprototype;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Slide;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +22,9 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class homepage1 extends AppCompatActivity {
 
@@ -30,6 +36,7 @@ public class homepage1 extends AppCompatActivity {
             "image07", "image08", "image09",
             "image10", "image11", "image12"
     };
+    /*
     int[] images = {
             R.drawable.image01, R.drawable.image02, R.drawable.image03,
             R.drawable.image04, R.drawable.image05, R.drawable.image06,
@@ -37,6 +44,10 @@ public class homepage1 extends AppCompatActivity {
             R.drawable.image10, R.drawable.image11, R.drawable.image12
     };
 
+*/
+    //Placeholders
+    int[] images = {R.drawable.image1, R.drawable.image2, R.drawable.image3,
+            R.drawable.image4, R.drawable.image5, R.drawable.image6};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +73,16 @@ public class homepage1 extends AppCompatActivity {
 
             }
         });
+
+        //ImageSlider
+        ImageSlider imageSlider = findViewById(R.id.slider);
+
+        List<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Image1"));
+        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Image2"));
+        slideModels.add(new SlideModel("https://i.imgur.com/IOFwVy1.png", "Image3"));
+        imageSlider.setImageList(slideModels, true);
+
 
     }
 
