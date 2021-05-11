@@ -31,17 +31,17 @@ public class homepage1 extends AppCompatActivity {
     GridView gridView;
 
     String[] names = {
-            "image01", "image02", "image03",
-            "image04", "image05", "image06",
-            "image07", "image08", "image09",
-            "image10", "image11", "image12"
+            "H&M", "adidas", "Adobe",
+            "Airbnb", "Warner books", "Bacardi",
+            "Mcdonald's", "Academic books", "Apple",
+            "Heineken", "KFC", "Føtex"
     };
 
     int[] images = {
-            R.drawable.image01, R.drawable.image02, R.drawable.image03,
-            R.drawable.image04, R.drawable.image05, R.drawable.image06,
-            R.drawable.image07, R.drawable.image08, R.drawable.image09,
-            R.drawable.image10, R.drawable.image11, R.drawable.image12
+            R.drawable.hm, R.drawable.adidas, R.drawable.adobe,
+            R.drawable.airbnb, R.drawable.warnerbooks, R.drawable.bacardi,
+            R.drawable.mcdonalds, R.drawable.academicbooks, R.drawable.apple,
+            R.drawable.heineken, R.drawable.kfc, R.drawable.fotexstores
     };
     
 
