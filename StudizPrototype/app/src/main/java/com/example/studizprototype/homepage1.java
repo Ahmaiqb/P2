@@ -1,5 +1,6 @@
 package com.example.studizprototype;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -43,6 +44,96 @@ public class homepage1 extends AppCompatActivity {
             R.drawable.mcdonalds, R.drawable.academicbooks, R.drawable.apple,
             R.drawable.heineken, R.drawable.kfc, R.drawable.fotexstores
     };
+
+    String[] descriptions = {
+            //H&M
+            "Bliv H&M Member og få rabat + fri standard levering på dit næste køb!" + '\n' + "Placeringer: Online shop",
+
+            //Adidas
+            "Sport holder os i form. Holder os vågne. Forener os." +
+            "\n" + "Sport har evnen til at ændre liv. Om det er gennem\n" + "historier om inspirerende atleter.\n" +
+            "Om det får dig ud af døren. \n" +
+            "Sportstøj med de seneste teknologier, der forbedrer din\n" +
+            "performance. Slå din personlige rekord. adidas er\n" +
+            "hjemmet for løbere, basketballspillere,\n" +
+            "fitness-entusiaster og fodboldfans i alle aldre" +
+            "\n" +
+                    " Placeringer:\n" +
+                    "   - Online Bestilling\n",
+
+            //Adobe
+            "Kreativitet ligger i vores DNA. Vores skelsættende\n" +
+                    "innovationer redefinerer mulighederne ved digitale\n" +
+                    "oplevelser. Vi forbinder indhold og data og introducerer\n" +
+                    "nye teknologier, der demokratiserer kreativitet, former\n" +
+                    "næste generation af historiefortælling samt inspirerer\n" +
+                    "til helt nye forretningskategorier."
+                    +  "\n" +
+                    " Placeringer:\n" +
+                    "   - Online Bestilling\n",
+
+            //Airbnb
+            "Airbnb was born in 2007 when two Hosts welcomed\n" +
+                    " three guests to their San Francisco home, and has since\n" +
+                    " grown to 4 million Hosts who have welcomed over 800\n" +
+                    " million guest arrivals in almost every country across the\n" +
+                    " globe. Every day, Hosts offer one-of-a-kind stays and\n" +
+                    " unique Experiences that make it possible for guests\n" +
+                    " to experience the world in a more authentic, connected\n" +
+                    " way."
+                    +  "\n" +
+                    " Placeringer:\n" +
+                    "   - Online Bestilling\n",
+
+            //Warner books
+            "Warner books",
+
+            //Bacardi
+
+
+            //McDonald's
+            "McDonald's",
+
+            //Academic books
+            "I dag består Academic Books ikke kun af fysiske butikker\n" +
+                    "på uddannelsesinstitutioner. Vi fungerer i særdeleshed\n" +
+                    "også som en nonprofit online bogforretning,\n" +
+                    "hvor du - ligesom altid - nemt og hurtigt kan købe dine\n" +
+                    "\n" +
+                    " Placeringer:\n" +
+                    "   - Online Bestilling\n",
+
+
+            //Apple
+            "Hvorfor vælge Apple:\n" +
+                    "   Apple's ambition er at være den \n" +
+                    "   studerendes fortrukne valg, og har \n" +
+                    "   tilpasset en lang række af sine \n" +
+                    "   produkter til de studerendes særlig\n" +
+                    "   behov og krav.\n" +
+                    "Placeringer:\n" +
+                    "   - Online Shop",
+
+            //Heineken
+            "Heineken",
+
+            //KFC
+            "KFC kom til Danmark i 70'erne, hvor de åbnede deres\n" +
+                    "første restaurant i Rødovre. I dag har KFC 6 restauranter\n" +
+                    "i Storkøbenhavn, 2 i Odense, 1 i Herning og 1 i Tilst.\n" +
+                    "\n" +
+                    "Så hvis du er sulten efter noget lækkert kylling, så tag et\n" +
+                    "kig på deres hjemmeside og bestil med 15% rabat.\n" +
+                    "\n" +
+                    " Placeringer:\n" +
+                    "   - Online Bestilling\n" +
+                    "   - Rådhuspladsen 55, 1550 København V",
+
+            //Føtex
+            "Føtex"
+
+
+    };
     
 
     @Override
@@ -64,8 +155,9 @@ public class homepage1 extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String selectedName = names[position];
                 int selectedImage = images[position];
+                String selectedDescription = descriptions[position];
 
-                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage));
+                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
 
             }
         });
@@ -81,6 +173,7 @@ public class homepage1 extends AppCompatActivity {
 
 
     }
+
 
     public class CustomAdapter extends BaseAdapter {
         private String[] imageNames;

@@ -4,4 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="hjemmeside">Gå til hjemmeside</string>
+    <string name="maps">Maps</string>
 </resources>

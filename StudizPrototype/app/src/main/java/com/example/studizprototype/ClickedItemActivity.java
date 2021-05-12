@@ -12,6 +12,7 @@ public class ClickedItemActivity extends AppCompatActivity {
 
     ImageView imageView;
     TextView textView;
+    TextView descriptiontxt;
 
 
     @Override
@@ -22,15 +23,18 @@ public class ClickedItemActivity extends AppCompatActivity {
         //Find my image and text.
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.tvName);
+        descriptiontxt = findViewById(R.id.descriptiontext);
 
         Intent intent = getIntent();
 
         if(intent.getExtras() != null) {
             String selectedName = intent.getStringExtra("name");
             int selectedImage = intent.getIntExtra("image", 0);
+            String selectedDescription = intent.getStringExtra("description");
 
             textView.setText(selectedName);
             imageView.setImageResource(selectedImage);
+            descriptiontxt.setText(selectedDescription);
         }
 
     }
