@@ -4,10 +4,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="1dp"
-    android:background="#53354A"
+    android:background="#FFFFFF"
     android:elevation="4dp"
     android:padding="2dp"
-    app:cardBackgroundColor="#903749"
+    app:cardBackgroundColor="#FFFFFF"
     app:cardCornerRadius="4dp">
 
     <RelativeLayout
@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
+            android:padding="10dp"
             android:scaleType="fitXY"
             android:src="@mipmap/ic_launcher" />
 

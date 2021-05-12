@@ -89,7 +89,7 @@ public class homepage1 extends AppCompatActivity {
             "Warner books",
 
             //Bacardi
-
+            "Bacardi",
 
             //McDonald's
             "McDonald's",
