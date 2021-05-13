@@ -30,8 +30,21 @@ public class Kategorier extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kategorier);
 
+        //Find my gridView.
+        gridView = findViewById(R.id.gridView);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+            int selectedImage = images[position];
+            startActivity(new Intent(Kategorier.this, ClickedItemActivity.class).putExtra("image", selectedImage));
+        }
+    });
         home = findViewById(R.id.homeBtn);
         home.setOnClickListener(new View.OnClickListener() {
+
+
+            //Bottom menu buttons start here
             @Override
             public void onClick(View v) {
                 loadHome();
@@ -54,19 +67,11 @@ public class Kategorier extends AppCompatActivity {
             }
         });
 
-        //Find my gridView.
-        gridView = findViewById(R.id.gridView);
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                int selectedImage = images[position];
-                startActivity(new Intent(Kategorier.this, ClickedItemActivity.class).putExtra("image", selectedImage));
 
-            }
-        });
     }
 
+    //Bottom menu button functions
     private void loadHome() {
         Intent kategori = new Intent(this,homepage1.class);
         startActivity(kategori);
