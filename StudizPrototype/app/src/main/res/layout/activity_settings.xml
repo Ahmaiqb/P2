@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+
+    <TextView
+        android:layout_width="362dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="Du er logget ind som: "
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="244dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:text="Indtast e-mail og password "
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="E-mail: "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Password: "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="50dp"
+            android:text="Opdater E-mail og Password"
+            android:backgroundTint="@color/knapBlå"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="244dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Studiekort billede "
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="50dp"
+            android:text="Ændre billede af studiekort"
+            android:backgroundTint="@color/knapBlå"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/studizfarve"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/studizfarve"
+            android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/kategoriBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
+            android:src="@drawable/ic_baseline_category_24" />
+
+        <ImageButton
+            android:id="@+id/studiekortBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
+            android:src="@drawable/ic_baseline_perm_identity_24" />
+
+        <ImageButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
+            android:src="@drawable/settings" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

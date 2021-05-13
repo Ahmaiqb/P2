@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.studizprototype">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudizPrototype">
-        <activity android:name=".ClickedItemActivity"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Studiekort" />
+        <activity
+            android:name=".Kategorier"
+            android:label="@string/title_activity_kategorier" />
+        <activity android:name=".ClickedItemActivity" />
         <activity
             android:name=".homepage1"
             android:label="@string/title_activity_homepage1" />

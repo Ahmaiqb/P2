@@ -2,15 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    tools:context=".Kategorier">
 
     <GridView
         android:id="@+id/gridView"
-        android:layout_width="374dp"
-        android:layout_height="304dp"
+        android:layout_width="377dp"
+        android:layout_height="581dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
@@ -28,13 +27,16 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:orientation="horizontal"
+        android:background="@color/studizfarve"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
             android:id="@+id/homeBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/studizfarve"
             android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
             android:src="@drawable/ic_home_black_24dp" />
 
         <ImageButton
@@ -42,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
             android:src="@drawable/ic_baseline_category_24" />
 
         <ImageButton
@@ -49,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
             android:src="@drawable/ic_baseline_perm_identity_24" />
 
         <ImageButton
@@ -56,28 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:backgroundTint="@color/studizlys"
             android:src="@drawable/settings" />
 
     </LinearLayout>
-
-
-    <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        app:auto_cycle="true"
-        app:delay="0"
-        app:error_image="@drawable/grey_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:period="1000"
-        app:placeholder="@drawable/grey_bg" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

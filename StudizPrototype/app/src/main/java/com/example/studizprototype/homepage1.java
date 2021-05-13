@@ -1,5 +1,6 @@
 package com.example.studizprototype;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +31,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class homepage1 extends AppCompatActivity {
+
+    ImageButton kategorier;
+    ImageButton studiekort;
+    ImageButton settings;
 
     GridView gridView;
 
@@ -134,13 +141,13 @@ public class homepage1 extends AppCompatActivity {
 
 
     };
-    
 
+
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage1);
-
 
         //Find my gridView.
         gridView = findViewById(R.id.gridView);
@@ -166,13 +173,51 @@ public class homepage1 extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Image1"));
-        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Image2"));
-        slideModels.add(new SlideModel("https://i.imgur.com/IOFwVy1.png", "Image3"));
+        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Telsa"));
+        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Gucci"));
+        slideModels.add(new SlideModel("https://i.imgur.com/IOFwVy1.png", "Amazon Prime Video"));
         imageSlider.setImageList(slideModels, true);
 
+        kategorier = findViewById(R.id.kategoriBtn);
+        kategorier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadKategori();
+            }
+        });
 
+        studiekort = findViewById(R.id.studiekortBtn);
+        studiekort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadStudiekort();
+            }
+        });
+
+        settings = findViewById(R.id.settingsBtn);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSettings();
+            }
+        });
     }
+
+    private void loadKategori() {
+        Intent kategori = new Intent(this,Kategorier.class);
+        startActivity(kategori);
+    }
+
+    private void loadStudiekort() {
+        Intent studiekort = new Intent(this,Studiekort.class);
+        startActivity(studiekort);
+    }
+
+    private void loadSettings() {
+        Intent setting = new Intent(this,Settings.class);
+        startActivity(setting);
+    }
+
 
 
     public class CustomAdapter extends BaseAdapter {
