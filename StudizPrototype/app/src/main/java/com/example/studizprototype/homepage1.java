@@ -36,6 +36,7 @@ public class homepage1 extends AppCompatActivity {
     ImageButton studiekort;
     ImageButton settings;
 
+
     GridView gridView;
 
     String[] names = {
