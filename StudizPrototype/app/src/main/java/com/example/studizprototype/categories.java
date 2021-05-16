@@ -29,4 +29,10 @@ public class categories extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goTorestaurant (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, restaurant.class);
+        startActivity(intent);
+    }
+
 }

@@ -23,17 +23,14 @@ public class books extends AppCompatActivity {
     GridView gridView;
 
     String[] names = {
-            "Barer & Diskoteker", "Bøger & Studie", "Cafeer & Restauranter",
-            "Elektronik & IT", "Fritid & Fornøjelse", "Indretning & Dagligvare",
-            "Mode", "Rejser & Transport", "Skønhed & Velvare",
-            "Sport & Fitness", "Sundhed & Helse",
+            "Arnold Busck", "IDG Books", "Saxo",
+            "Study Express", "Warner Books", "Academic Books",
+            
     };
 
     int[] images = {
-            R.drawable.catbar, R.drawable.catbooks, R.drawable.catrestaurant,
-            R.drawable.catelectronic, R.drawable.catfreetime, R.drawable.catshop,
-            R.drawable.catfashion, R.drawable.cattransport, R.drawable.catbeauty,
-            R.drawable.catsport, R.drawable.cathealt
+            R.drawable.arnoldbusck, R.drawable.idgbooksworldwide, R.drawable.saxo,
+            R.drawable.studyexpress, R.drawable.warnerbooks, R.drawable.academicbooks,
     };
 
     String[] descriptions = {

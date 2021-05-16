@@ -15,7 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class bar extends AppCompatActivity {
+public class restaurant extends AppCompatActivity {
     ImageButton home;
     ImageButton studiekort;
     ImageButton settings;
@@ -23,13 +23,15 @@ public class bar extends AppCompatActivity {
     GridView gridView;
 
     String[] names = {
-            "Amstel", "Bacardi", "Baileys", "Captain Morgan", "Heineken", "Jagermeister", "TGI Friday"
+            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
+            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+
     };
 
     int[] images = {
-            R.drawable.amstel, R.drawable.bacardi, R.drawable.baileys,
-            R.drawable.captainmorgan, R.drawable.heineken, R.drawable.jagermeister,
-            R.drawable.tgifridays
+            R.drawable.burgerking, R.drawable.dominospizza, R.drawable.dunkindonuts,
+            R.drawable.mcdonalds, R.drawable.molinorestaurants, R.drawable.teterestaurant,
+            R.drawable.kfc, R.drawable.yosushi
     };
 
     String[] descriptions = {
@@ -48,17 +50,16 @@ public class bar extends AppCompatActivity {
                     " Placeringer:\n" +
                     "   - Online Bestilling\n",
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bar);
+        setContentView(R.layout.activity_restaurant);
 
         //Find my gridView.
         gridView = findViewById(R.id.gridView);
 
         //Link between my UI components and the data source.
-        bar.CustomAdapter customAdapter = new bar.CustomAdapter(names, images, this);
+        restaurant.CustomAdapter customAdapter = new restaurant.CustomAdapter(names, images, this);
 
         gridView.setAdapter(customAdapter);
 
@@ -69,7 +70,7 @@ public class bar extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
 
-                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
             }
         });
 
