@@ -41,4 +41,46 @@ public class categories extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goTofreetime (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, freetime.class);
+        startActivity(intent);
+    }
+
+    public void goToshopping (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, shopping.class);
+        startActivity(intent);
+    }
+
+    public void goTofashion (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, fashion.class);
+        startActivity(intent);
+    }
+
+    public void goTotransport (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, transport.class);
+        startActivity(intent);
+    }
+
+    public void goTobeauty (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, beauty.class);
+        startActivity(intent);
+    }
+
+    public void goTosport (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, sport.class);
+        startActivity(intent);
+    }
+
+    public void goTohealth (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, health.class);
+        startActivity(intent);
+    }
+
 }

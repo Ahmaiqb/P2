@@ -198,18 +198,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catfreetime"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTofreetime"
+                android:padding="25dp"
+                android:text="@string/catfreetime"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catfreetime"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTofreetime"
+                android:src="@drawable/catfreetime" />
 
             <Button
                 android:id="@+id/freetime"
@@ -218,6 +220,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTofreetime"
                 android:padding="20dp" />
 
 
@@ -232,18 +235,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catshop"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goToshopping"
+                android:padding="25dp"
+                android:text="@string/catshop"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catshop"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goToshopping"
+                android:src="@drawable/catshop" />
 
             <Button
                 android:id="@+id/shopping"
@@ -252,6 +257,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goToshopping"
                 android:padding="20dp" />
 
 
@@ -266,18 +272,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catfashion"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTofashion"
+                android:padding="25dp"
+                android:text="@string/catfashion"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catfashion"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTofashion"
+                android:src="@drawable/catfashion" />
 
             <Button
                 android:id="@+id/fashion"
@@ -286,6 +294,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTofashion"
                 android:padding="20dp" />
 
 
@@ -300,18 +309,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/cattransport"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTotransport"
+                android:padding="25dp"
+                android:text="@string/cattransport"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cattransport"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTotransport"
+                android:src="@drawable/cattransport" />
 
             <Button
                 android:id="@+id/transport"
@@ -320,6 +331,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTotransport"
                 android:padding="20dp" />
 
 
@@ -334,18 +346,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catbeauty"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTobeauty"
+                android:padding="25dp"
+                android:text="@string/catbeauty"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catbeauty"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTobeauty"
+                android:src="@drawable/catbeauty" />
 
             <Button
                 android:id="@+id/beauty"
@@ -354,6 +368,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTobeauty"
                 android:padding="20dp" />
 
 
@@ -368,18 +383,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catsport"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTosport"
+                android:padding="25dp"
+                android:text="@string/catsport"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catsport"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTosport"
+                android:src="@drawable/catsport" />
 
             <Button
                 android:id="@+id/sport"
@@ -388,6 +405,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTosport"
                 android:padding="20dp" />
 
 
@@ -402,18 +420,20 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/cathealt"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goTohealth"
+                android:padding="25dp"
+                android:text="@string/cathealt"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cathealt"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goTohealth"
+                android:src="@drawable/cathealt" />
 
             <Button
                 android:id="@+id/health"
@@ -422,6 +442,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goTohealth"
                 android:padding="20dp" />
 
 

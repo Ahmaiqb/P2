@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudizPrototype">
-        <activity android:name=".it"></activity>
+        <activity android:name=".health"></activity>
+        <activity android:name=".sport" />
+        <activity android:name=".beauty" />
+        <activity android:name=".transport" />
+        <activity android:name=".fashion" />
+        <activity android:name=".shopping" />
+        <activity android:name=".freetime" />
+        <activity android:name=".it" />
         <activity android:name=".restaurant" />
         <activity android:name=".books" />
         <activity android:name=".bar" />
