@@ -35,4 +35,10 @@ public class categories extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToit (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, it.class);
+        startActivity(intent);
+    }
+
 }

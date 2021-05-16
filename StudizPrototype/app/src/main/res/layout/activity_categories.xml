@@ -157,24 +157,25 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            >
+            android:layout_height="150dp">
 
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="@string/catelectronic"
-                android:textSize="20sp"
-                android:padding="25dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:onClick="goToit"
+                android:padding="25dp"
+                android:text="@string/catelectronic"
+                android:textSize="20sp" />
 
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/catelectronic"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:onClick="goToit"
+                android:src="@drawable/catelectronic" />
 
             <Button
                 android:id="@+id/it"
@@ -183,8 +184,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:background="#00000000"
+                android:onClick="goToit"
                 android:padding="20dp" />
-
 
 
         </RelativeLayout>

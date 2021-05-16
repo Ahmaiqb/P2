@@ -25,7 +25,7 @@ public class books extends AppCompatActivity {
     String[] names = {
             "Arnold Busck", "IDG Books", "Saxo",
             "Study Express", "Warner Books", "Academic Books",
-            
+
     };
 
     int[] images = {
@@ -34,20 +34,8 @@ public class books extends AppCompatActivity {
     };
 
     String[] descriptions = {
-            //H&M
-            "Bliv H&M Member og få rabat + fri standard levering på dit næste køb!" + '\n' + "Placeringer: Online shop",
-
-            //Adidas
-            "Sport holder os i form. Holder os vågne. Forener os." +
-                    "\n" + "Sport har evnen til at ændre liv. Om det er gennem\n" + "historier om inspirerende atleter.\n" +
-                    "Om det får dig ud af døren. \n" +
-                    "Sportstøj med de seneste teknologier, der forbedrer din\n" +
-                    "performance. Slå din personlige rekord. adidas er\n" +
-                    "hjemmet for løbere, basketballspillere,\n" +
-                    "fitness-entusiaster og fodboldfans i alle aldre" +
-                    "\n" +
-                    " Placeringer:\n" +
-                    "   - Online Bestilling\n",
+            "Arnold Busck", "IDG Books", "Saxo",
+            "Study Express", "Warner Books", "Academic Books",
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
