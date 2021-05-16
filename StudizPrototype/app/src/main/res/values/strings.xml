@@ -7,4 +7,16 @@
     <string name="hjemmeside">Gå til hjemmeside</string>
     <string name="maps">Maps</string>
     <string name="title_activity_kategorier">MainActivity</string>
+    <string name="catbar">Barer og Diskoteker</string>
+    <string name="expandall">Expand all</string>
+    <string name="catbooks">Bøger og Studie</string>
+    <string name="catrestaurant">Cafeer og Restauranter</string>
+    <string name="catelectronic">Elektronik og IT</string>
+    <string name="catfreetime">Fritid og Fornøjelse</string>
+    <string name="catshop">Indretning og Dagligvare</string>
+    <string name="catfashion">Mode</string>
+    <string name="cattransport">Rejser og Transport</string>
+    <string name="catbeauty">Skønhed og Velvare</string>
+    <string name="catsport">Sport og Fitness</string>
+    <string name="cathealt">Sundhed og Helse</string>
 </resources>

@@ -205,7 +205,7 @@ public class homepage1 extends AppCompatActivity {
     }
 
     private void loadKategori() {
-        Intent kategori = new Intent(this,Kategorier.class);
+        Intent kategori = new Intent(this,categories.class);
         startActivity(kategori);
     }
 

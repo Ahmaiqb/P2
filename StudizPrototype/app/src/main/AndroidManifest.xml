@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudizPrototype">
+        <activity android:name=".books"></activity>
+        <activity android:name=".bar" />
+        <activity android:name=".categories" />
         <activity android:name=".Settings" />
         <activity android:name=".Studiekort" />
         <activity
