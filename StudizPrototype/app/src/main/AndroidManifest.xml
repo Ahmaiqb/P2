@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudizPrototype">
         <activity android:name=".health"></activity>
+        <activity android:name=".loginScreen"/>
         <activity android:name=".sport" />
         <activity android:name=".beauty" />
         <activity android:name=".transport" />
