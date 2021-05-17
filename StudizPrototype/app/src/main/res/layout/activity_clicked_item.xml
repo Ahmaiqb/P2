@@ -65,7 +65,7 @@
         app:backgroundTint="#328FC4" />
 
     <Button
-        android:id="@+id/maps"
+        android:id="@+id/buttonmaps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/descriptiontext"

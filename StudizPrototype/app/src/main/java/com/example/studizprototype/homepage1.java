@@ -143,6 +143,8 @@ public class homepage1 extends AppCompatActivity {
 
     };
 
+    String[] url = {"https://kfc.dk/, https://apple.dk"};
+
 
     @SuppressLint("WrongViewCast")
     @Override

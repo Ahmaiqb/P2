@@ -21,6 +21,9 @@ public class ClickedItemActivity extends AppCompatActivity {
     Button discount;
     String disurl = "https://kfc.dk/";
 
+    Button maps;
+    String mapsurl = "https://google.dk/maps";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,12 +46,22 @@ public class ClickedItemActivity extends AppCompatActivity {
             imageView.setImageResource(selectedImage);
             descriptiontxt.setText(selectedDescription);
         }
+
+
         discount = findViewById(R.id.buttondiscount);
         discount.setOnClickListener((v) -> {
 
             Intent discPage = new Intent(Intent.ACTION_VIEW);
             discPage.setData(Uri.parse(disurl));
             startActivity(discPage);
+        });
+
+        maps = findViewById(R.id.buttonmaps);
+        maps.setOnClickListener((v) -> {
+
+            Intent mapsPage = new Intent(Intent.ACTION_VIEW);
+            mapsPage.setData(Uri.parse(mapsurl));
+            startActivity(mapsPage);
         });
     }
 }

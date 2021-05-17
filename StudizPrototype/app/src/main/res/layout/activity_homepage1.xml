@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/studizlys"
+            android:backgroundTint="@color/studizfarve"
             android:src="@drawable/ic_baseline_home_hvid" />
 
         <ImageButton
