@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">StudizPrototype</string>
-    <string name="title_activity_homepage1">MainActivity</string>
+    <string name="title_activity_homepage1">Studiz</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="hjemmeside">Gå til hjemmeside</string>
     <string name="maps">Maps</string>
-    <string name="title_activity_kategorier">MainActivity</string>
+    <string name="title_activity_kategorier">Kategorier</string>
     <string name="catbar">Barer og Diskoteker</string>
     <string name="expandall">Expand all</string>
     <string name="catbooks">Bøger og Studie</string>
@@ -19,4 +19,6 @@
     <string name="catbeauty">Skønhed og Velvare</string>
     <string name="catsport">Sport og Fitness</string>
     <string name="cathealt">Sundhed og Helse</string>
+    <string name="Studiekort">Studiekort</string>
+    <string name="settings">Indstillinger</string>
 </resources>

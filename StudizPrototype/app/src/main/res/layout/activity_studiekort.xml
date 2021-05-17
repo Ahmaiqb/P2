@@ -102,7 +102,7 @@
             android:outlineSpotShadowColor="@color/studizfarve"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/ic_home_black_24dp" />
+            android:src="@drawable/ic_baseline_home_hvid" />
 
         <ImageButton
             android:id="@+id/kategoriBtn"
@@ -110,7 +110,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/ic_baseline_category_24" />
+            android:src="@drawable/ic_baseline_category_hvid" />
 
         <ImageButton
             android:id="@+id/studiekortBtn"
@@ -118,7 +118,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/ic_baseline_perm_identity_24" />
+            android:src="@drawable/ic_baseline_perm_identity_hvidkant" />
 
         <ImageButton
             android:id="@+id/settingsBtn"
@@ -126,7 +126,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/settings" />
+            android:src="@drawable/ic_baseline_settings_hvid" />
 
     </LinearLayout>
 

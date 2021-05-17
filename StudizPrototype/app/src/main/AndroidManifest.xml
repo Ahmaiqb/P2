@@ -17,14 +17,30 @@
         <activity android:name=".transport" />
         <activity android:name=".fashion" />
         <activity android:name=".shopping" />
-        <activity android:name=".freetime" />
-        <activity android:name=".it" />
-        <activity android:name=".restaurant" />
-        <activity android:name=".books" />
-        <activity android:name=".bar" />
-        <activity android:name=".categories" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Studiekort" />
+        <activity
+            android:name=".freetime"
+            android:label="@string/catfreetime"/>
+        <activity
+            android:name=".it"
+            android:label="It"/>
+        <activity
+            android:name=".restaurant"
+            android:label="@string/catrestaurant"/>
+        <activity
+            android:name=".books"
+            android:label="@string/catbooks" />
+        <activity
+            android:name=".bar"
+            android:label="@string/catbar"/>
+        <activity
+            android:name=".categories"
+            android:label="@string/title_activity_kategorier"/>
+        <activity
+            android:name=".Settings"
+            android:label="@string/settings"/>
+        <activity
+            android:name=".Studiekort"
+            android:label="@string/Studiekort"/>
         <activity
             android:name=".Kategorier"
             android:label="@string/title_activity_kategorier" />
