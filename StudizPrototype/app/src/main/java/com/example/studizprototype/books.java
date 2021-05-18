@@ -38,6 +38,12 @@ public class books extends AppCompatActivity {
             "Arnold Busck", "IDG Books", "Saxo",
             "Study Express", "Warner Books", "Academic Books",
     };
+
+    String[] url = {
+            "Arnold Busck", "IDG Books", "Saxo",
+            "Study Express", "Warner Books", "Academic Books",
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +63,9 @@ public class books extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(books.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(books.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

@@ -39,6 +39,12 @@ public class freetime extends AppCompatActivity {
             "Monthly Fishing Magazines", "Netflix", "Skyzone"
     };
 
+    String[] url = {
+            "AMF", "Film Casino", "Imax",
+            "Monthly Fishing Magazines", "Netflix", "Skyzone"
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +63,9 @@ public class freetime extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(freetime.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(freetime.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

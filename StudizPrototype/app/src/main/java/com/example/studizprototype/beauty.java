@@ -38,6 +38,12 @@ public class beauty extends AppCompatActivity {
             "Dove", "L'ORÉAL", "MAC",
             "Nivea", "NYX"
     };
+
+    String[] url = {
+            "Dove", "L'ORÉAL", "MAC",
+            "Nivea", "NYX"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +63,9 @@ public class beauty extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(beauty.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(beauty.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 
