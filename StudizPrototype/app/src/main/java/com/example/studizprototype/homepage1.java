@@ -194,8 +194,9 @@ public class homepage1 extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
 
-                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
-
+                startActivity(new Intent(homepage1.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName).putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

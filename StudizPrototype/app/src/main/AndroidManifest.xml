@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudizPrototype">
+        <activity android:name=".search"/>
         <activity android:name=".health"/>
         <activity android:name=".loginScreen"/>
         <activity android:name=".sport" />

@@ -63,7 +63,9 @@ public class bar extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
 
-                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(bar.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName).putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 
