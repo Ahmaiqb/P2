@@ -22,7 +22,7 @@ public class ClickedItemActivity extends AppCompatActivity {
     String disurl = "https://kfc.dk/";
 
     Button maps;
-    String mapsurl = "https://google.dk/maps";
+    String mapsurl = "https://www.google.dk/maps/place/R%C3%A5dhuspladsen+55,+1550+K%C3%B8benhavn/@55.676448,12.5674966,17z/data=!3m1!4b1!4m5!3m4!1s0x4652531201b542c7:0x32d050afb5bb0788!8m2!3d55.676448!4d12.5696853";
 
 
     @Override
