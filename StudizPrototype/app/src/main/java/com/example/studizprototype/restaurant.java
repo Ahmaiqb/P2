@@ -40,8 +40,8 @@ public class restaurant extends AppCompatActivity {
     };
 
     String[] url = {
-            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
-            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+            "https://www.bk.com/", "https://www.dominos.com/index.intl.html", "https://www.dunkindonuts.com/",
+            "https://www.mcdonalds.com/us/en-us.html", "https://molinositaliankitchen.com/", "https://www.teterestaurant.ae/", "https://www.kfc.com/", "https://yosushi.com/"
     };
 
     @Override
