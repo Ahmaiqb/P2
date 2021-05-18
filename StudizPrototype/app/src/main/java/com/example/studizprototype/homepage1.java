@@ -183,9 +183,9 @@ public class homepage1 extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Telsa"));
-        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Gucci"));
         slideModels.add(new SlideModel("https://i.imgur.com/IOFwVy1.png", "Amazon Prime Video"));
+        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Gucci"));
+        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Telsa"));
         imageSlider.setImageList(slideModels, true);
 
         kategorier = findViewById(R.id.kategoriBtn);
