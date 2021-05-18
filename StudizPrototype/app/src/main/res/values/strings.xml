@@ -4,7 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="hjemmeside">Gå til hjemmeside</string>
     <string name="maps">Maps</string>
     <string name="title_activity_kategorier">Kategorier</string>
     <string name="catbar">Barer og Diskoteker</string>
@@ -21,4 +20,5 @@
     <string name="cathealt">Sundhed og Helse</string>
     <string name="Studiekort">Studiekort</string>
     <string name="settings">Indstillinger</string>
+    <string name="hjemmeside">Brug rabat</string>
 </resources>
