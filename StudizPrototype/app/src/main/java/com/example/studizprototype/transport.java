@@ -39,8 +39,8 @@ public class transport extends AppCompatActivity {
     };
 
     String[] url = {
-            "DSB", "Hastings Hotel", "Hilton",
-            "SAS", "SKY Travel"
+            "https://www.dsb.dk/", "https://www.hastingshotels.com/", "https://www.hilton.com/en/",
+            "https://www.sas.dk/", "https://www.skytravels.com/"
     };
 
     @Override
