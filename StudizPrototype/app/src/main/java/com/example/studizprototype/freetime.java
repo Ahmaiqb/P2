@@ -40,8 +40,19 @@ public class freetime extends AppCompatActivity {
     };
 
     String[] url = {
-            "AMF", "Film Casino", "Imax",
-            "Monthly Fishing Magazines", "Netflix", "Skyzone"
+
+            //AMF
+            "https://www.amf.com",
+            //film casino
+            "https://www.casino.dk",
+            //Tmax
+            "cinemaxx.dk/",
+            //Monthly fishing magazine
+            "http://fishingmonthly.com.au",
+            //netflix
+            "www.netflix.com/",
+            //skyzone
+            "https://www.skyzone.com"
 
     };
 

@@ -37,7 +37,12 @@ public class health extends AppCompatActivity {
     };
 
     String[] url = {
-            "Apotek", "Hello Fresh", "Natural Health"
+            //apotek
+            "https://www.apoteket.dk",
+            //hello Fresh
+            "www.hellofresh.dk",
+            //natural health
+            "https://www.naturalhealthwoman.com"
 
     };
 
