@@ -82,7 +82,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:period="1000"
+        app:period="3000"
         app:placeholder="@drawable/grey_bg" />
 
 

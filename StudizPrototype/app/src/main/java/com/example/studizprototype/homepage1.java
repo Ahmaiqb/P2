@@ -144,10 +144,30 @@ public class homepage1 extends AppCompatActivity {
     };
 
     String[] url = {
-            "H&M", "adidas", "Adobe",
-            "Airbnb", "Warner books", "Bacardi",
-            "Mcdonald's", "Academic books", "Apple",
-            "Heineken", "KFC", "Føtex"
+            //h&m
+            "https://www2.hm.com/da_dk/index.html",
+            //adidas
+            "https://www.adidas.dk",
+            //Adobe
+            "https://www.adobe.com/dk/",
+            //Airbnb
+            "https://www.airbnb.dk",
+            //Warner books
+            "https://www.saxo.com/dk/forlag/warner-books_107154?page=1",
+            //Bacardi
+            "https://www.bacardi.com",
+            //mcd
+            "https://www.mcdonalds.com/dk/da-dk.html?gclid=CjwKCAjwy42FBhB2EiwAJY0yQll0dyMw4ZQMfM7L-9NH59ObIOqHt3kZdihhFaZs8lK5qR6UWgUuDBoCBz0QAvD_BwE",
+            //Academic books
+            "https://www.academicbooks.dk",
+            //apple
+            "https://www.apple.com/dk/",
+            //heineken
+            "https://www2.heineken.com/dk/agegateway?returnurl=%2fdk",
+            //KFC
+            "https://kfc.dk",
+            //føtex
+            "https://www.foetex.dk"
     };
 
 
@@ -183,9 +203,9 @@ public class homepage1 extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Telsa"));
-        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Gucci"));
         slideModels.add(new SlideModel("https://i.imgur.com/IOFwVy1.png", "Amazon Prime Video"));
+        slideModels.add(new SlideModel("https://i.imgur.com/FagLTq2.png", "Gucci"));
+        slideModels.add(new SlideModel("https://i.imgur.com/eNivmRA.png", "Telsa"));
         imageSlider.setImageList(slideModels, true);
 
         kategorier = findViewById(R.id.kategoriBtn);
