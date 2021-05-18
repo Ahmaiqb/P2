@@ -40,8 +40,18 @@ public class books extends AppCompatActivity {
     };
 
     String[] url = {
-            "Arnold Busck", "IDG Books", "Saxo",
-            "Study Express", "Warner Books", "Academic Books",
+            //arnold busck, ingen hjemmeside?
+            "http://www.boghandlereidanmark.dk/index.php?id=967&beskrivelsesnummer=103&p_mode=beskrivelse&cHash=d95ce511a7e598fc1dcdf47d57a02aab",
+            //IDG Books
+            "https://www.idgkurser.dk/?gclid=CjwKCAjwy42FBhB2EiwAJY0yQnspDjrHxwu-YRMei5lVIMYM8GNCiR3c7OyGkebr6qlZNGM17Y-7ERoCb80QAvD_BwE",
+            //Saxo
+            "https://www.saxo.com/dk/",
+            //study express
+            "https://studyexpress.com.pk",
+            //Warner books
+            "https://www.saxo.com/dk/forlag/warner-books_107154?page=1",
+            //academic books
+            "https://www.academicbooks.dk",
     };
 
     @Override
