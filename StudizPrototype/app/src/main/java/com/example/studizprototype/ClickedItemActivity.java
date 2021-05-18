@@ -1,8 +1,13 @@
 package com.example.studizprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,11 +51,23 @@ public class ClickedItemActivity extends AppCompatActivity {
             imageView.setImageResource(selectedImage);
             descriptiontxt.setText(selectedDescription);
         }
-
-
+    //sørger for at notifications bliver vist uanset hvilken update man er på
+    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        NotificationChannel channel = new NotificationChannel("My Notification","My Notification", NotificationManager.IMPORTANCE_DEFAULT);
+         NotificationManager manager = getSystemService(NotificationManager.class);
+         manager.createNotificationChannel(channel);
+    }
         discount = findViewById(R.id.buttondiscount);
         discount.setOnClickListener((v) -> {
-
+            //notifications code
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(ClickedItemActivity.this, "My Notification");
+            builder.setContentTitle("Rabat Tilføjet");
+            builder.setContentText("Rabat kan bruges nu");
+            builder.setSmallIcon(R.drawable.studiz);
+            builder.setAutoCancel(true);
+            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(ClickedItemActivity.this);
+            managerCompat.notify(1,builder.build());
+            //noti code done
             Intent discPage = new Intent(Intent.ACTION_VIEW);
             discPage.setData(Uri.parse(disurl));
             startActivity(discPage);
