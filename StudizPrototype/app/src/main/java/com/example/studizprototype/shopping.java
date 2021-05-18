@@ -42,8 +42,8 @@ public class shopping extends AppCompatActivity {
     };
 
     String[] url = {
-            "Bilka", "Føtex", "Home & Harmony",
-            "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
+            "https://www.bilka.dk/", "https://www.foetex.dk/", "https://homes-harmony.com/",
+            "https://www.ikea.com/", "http://www.ilvacoatings.com/en", "https://www.jysk.com/", "https://netto.dk/", "https://www.homedepot.com/"
 
     };
 
