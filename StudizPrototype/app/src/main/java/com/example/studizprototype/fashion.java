@@ -40,8 +40,22 @@ public class fashion extends AppCompatActivity {
     };
 
     String[] url = {
-            "Asics", "Calvin Klein", "Diesel",
-            "Fila", "Mango", "Nike", "Zara", "H&M"
+            //Asics
+            "https://www.asics.com",
+            //Calvin Klein
+            "https://www.calvinklein.dk",
+            //Diesel
+            "https://dk.diesel.com/en/",
+            //Fila
+            "https://www.fila.de",
+            //mango
+            "https://shop.mango.com/dk",
+            //nike
+            "https://www.nike.com/dk/",
+            //Zara
+            "https://www.zara.com/dk/",
+            //hm
+            "https://www2.hm.com/da_dk/index.html"
     };
 
     @Override
