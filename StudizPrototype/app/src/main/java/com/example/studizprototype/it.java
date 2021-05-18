@@ -40,8 +40,22 @@ public class it extends AppCompatActivity {
     };
 
     String[] url = {
-            "Alienware", "Computer City", "Computer World",
-            "DELL", "HP", "XBOX", "Apple", "Microsoft"
+            //alienware
+            "https://www.dell.com/da-dk/gaming/alienware",
+            //computer city
+            "https://www.computersalg.dk",
+            //computer world
+            "https://www.computerworld.dk",
+            //dell
+            "https://www.dell.com/da-dk",
+            //HP
+            "https://www8.hp.com/dk/da/home.html",
+            //Xbox
+            "https://www.xbox.com/da-DK",
+            //apple
+            "https://www.apple.com/dk/",
+            //Microsoft
+            "https://www.microsoft.com/da-dk"
     };
 
     @Override
