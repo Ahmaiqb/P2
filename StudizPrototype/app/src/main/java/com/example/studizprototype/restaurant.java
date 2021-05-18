@@ -40,7 +40,7 @@ public class restaurant extends AppCompatActivity {
     };
 
     String[] url = {
-            "https://www.bk.com/", "https://www.dominos.com/index.intl.html", "https://www.dunkindonuts.com/",
+            "https://www.bk.com/", "https://www.dominos.com/index.intl.html", "https://www.dunkin-donuts.dk/",
             "https://www.mcdonalds.com/", "https://molinositaliankitchen.com/", "https://www.teterestaurant.ae/", "https://kfc.dk/", "https://yosushi.com/"
     };
 
