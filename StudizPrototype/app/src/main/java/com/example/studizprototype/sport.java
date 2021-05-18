@@ -39,8 +39,8 @@ public class sport extends AppCompatActivity {
     };
 
     String[] url = {
-            "Asics", "Fila", "Nike",
-            "Adidas", "Lifetime Fitness", "Fitbit"
+            "https://www.asics.com/us/en-us/", "https://www.fila.de/", "https://www.nike.com/dk/en/",
+            "https://www.adidas-group.com/en/", "https://shop.lifetime.life/", "https://www.fitbit.com/global/dk/home"
     };
 
     @Override
