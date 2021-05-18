@@ -26,7 +26,6 @@ public class fashion extends AppCompatActivity {
     String[] names = {
             "Asics", "Calvin Klein", "Diesel",
             "Fila", "Mango", "Nike", "Zara", "H&M"
-
     };
 
     int[] images = {
@@ -36,6 +35,11 @@ public class fashion extends AppCompatActivity {
     };
 
     String[] descriptions = {
+            "Asics", "Calvin Klein", "Diesel",
+            "Fila", "Mango", "Nike", "Zara", "H&M"
+    };
+
+    String[] url = {
             "Asics", "Calvin Klein", "Diesel",
             "Fila", "Mango", "Nike", "Zara", "H&M"
     };
@@ -59,8 +63,9 @@ public class fashion extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(fashion.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(fashion.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

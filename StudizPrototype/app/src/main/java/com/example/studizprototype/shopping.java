@@ -41,6 +41,12 @@ public class shopping extends AppCompatActivity {
             "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
     };
 
+    String[] url = {
+            "Bilka", "Føtex", "Home & Harmony",
+            "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,8 +66,9 @@ public class shopping extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(shopping.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(shopping.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

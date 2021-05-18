@@ -26,7 +26,6 @@ public class it extends AppCompatActivity {
     String[] names = {
             "Alienware", "Computer City", "Computer World",
             "DELL", "HP", "XBOX", "Apple", "Microsoft"
-
     };
 
     int[] images = {
@@ -39,6 +38,12 @@ public class it extends AppCompatActivity {
             "Alienware", "Computer City", "Computer World",
             "DELL", "HP", "XBOX", "Apple", "Microsoft"
     };
+
+    String[] url = {
+            "Alienware", "Computer City", "Computer World",
+            "DELL", "HP", "XBOX", "Apple", "Microsoft"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +63,9 @@ public class it extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(it.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(it.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

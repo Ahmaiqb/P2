@@ -143,7 +143,13 @@ public class homepage1 extends AppCompatActivity {
 
     };
 
-    String[] url = {"https://kfc.dk/, https://apple.dk"};
+    String[] url = {
+            "H&M", "adidas", "Adobe",
+            "Airbnb", "Warner books", "Bacardi",
+            "Mcdonald's", "Academic books", "Apple",
+            "Heineken", "KFC", "Føtex"
+    };
+
 
 
     @SuppressLint("WrongViewCast")
@@ -166,8 +172,9 @@ public class homepage1 extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
 
             }
         });

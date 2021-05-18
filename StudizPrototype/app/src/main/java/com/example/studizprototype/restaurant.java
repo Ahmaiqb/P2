@@ -26,7 +26,6 @@ public class restaurant extends AppCompatActivity {
     String[] names = {
             "Burger King", "Domino's Pizza", "Dunkin' Donuts",
             "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
-
     };
 
     int[] images = {
@@ -39,6 +38,12 @@ public class restaurant extends AppCompatActivity {
             "Burger King", "Domino's Pizza", "Dunkin' Donuts",
             "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
     };
+
+    String[] url = {
+            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
+            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +63,9 @@ public class restaurant extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 

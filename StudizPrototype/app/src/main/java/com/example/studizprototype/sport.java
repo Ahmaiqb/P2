@@ -26,7 +26,6 @@ public class sport extends AppCompatActivity {
     String[] names = {
             "Asics", "Fila", "Nike",
             "Adidas", "Lifetime Fitness", "Fitbit"
-
     };
 
     int[] images = {
@@ -38,6 +37,12 @@ public class sport extends AppCompatActivity {
             "Asics", "Fila", "Nike",
             "Adidas", "Lifetime Fitness", "Fitbit"
     };
+
+    String[] url = {
+            "Asics", "Fila", "Nike",
+            "Adidas", "Lifetime Fitness", "Fitbit"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +62,9 @@ public class sport extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(sport.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(sport.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 
