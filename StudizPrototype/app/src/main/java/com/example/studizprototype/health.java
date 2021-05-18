@@ -19,6 +19,7 @@ public class health extends AppCompatActivity {
     ImageButton home;
     ImageButton studiekort;
     ImageButton settings;
+    ImageButton kategorier;
 
     GridView gridView;
 
@@ -68,6 +69,14 @@ public class health extends AppCompatActivity {
             }
         });
 
+        kategorier = findViewById(R.id.kategoriBtn);
+        kategorier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadKategori();
+            }
+        });
+
         studiekort = findViewById(R.id.studiekortBtn);
         studiekort.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +95,12 @@ public class health extends AppCompatActivity {
     }
     //Bottom menu button functions
     private void loadHome() {
-        Intent kategori = new Intent(this,homepage1.class);
+        Intent home = new Intent(this,homepage1.class);
+        startActivity(home);
+    }
+
+    private void loadKategori() {
+        Intent kategori = new Intent(this,categories.class);
         startActivity(kategori);
     }
 

@@ -44,13 +44,13 @@ public class Studiekort extends AppCompatActivity {
         }
 
         private void loadHome() {
-            Intent kategori = new Intent(this,homepage1.class);
-            startActivity(kategori);
+            Intent home = new Intent(this,homepage1.class);
+            startActivity(home);
         }
 
         private void loadKategori() {
-            Intent studiekort = new Intent(this,Kategorier.class);
-            startActivity(studiekort);
+            Intent kategori = new Intent(this,categories.class);
+            startActivity(kategori);
         }
 
         private void loadSettings() {

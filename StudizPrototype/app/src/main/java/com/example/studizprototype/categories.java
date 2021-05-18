@@ -9,12 +9,52 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class categories extends AppCompatActivity {
-
+    ImageButton home;
+    ImageButton studiekort;
+    ImageButton settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
+        home = findViewById(R.id.homeBtn);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadHome();
+            }
+        });
+
+        studiekort = findViewById(R.id.studiekortBtn);
+        studiekort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadStudiekort();
+            }
+        });
+
+        settings = findViewById(R.id.settingsBtn);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSettings();
+            }
+        });
+    }
+
+    private void loadHome() {
+        Intent kategori = new Intent(this,homepage1.class);
+        startActivity(kategori);
+    }
+
+    private void loadStudiekort() {
+        Intent studiekort = new Intent(this,Studiekort.class);
+        startActivity(studiekort);
+    }
+
+    private void loadSettings() {
+        Intent setting = new Intent(this,Settings.class);
+        startActivity(setting);
     }
 
     public void goTobar (View v){

@@ -9,38 +9,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="0dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:src="@drawable/catbar" />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:src="@drawable/searchicon" />
-
-        </RelativeLayout>
         
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Categories"
-            android:textSize="30sp"
-            android:textAllCaps="false"
-            android:padding="10dp"/>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -448,6 +422,54 @@
 
 
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:background="@color/studizfarve"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageButton
+                    android:id="@+id/homeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/studizlys"
+                    android:src="@drawable/ic_baseline_home_hvid" />
+
+                <ImageButton
+                    android:id="@+id/kategoriBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/studizfarve"
+                    android:src="@drawable/ic_baseline_category_hvid" />
+
+                <ImageButton
+                    android:id="@+id/studiekortBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/studizlys"
+                    android:src="@drawable/ic_baseline_perm_identity_hvidkant" />
+
+                <ImageButton
+                    android:id="@+id/settingsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/studizlys"
+                    android:src="@drawable/ic_baseline_settings_hvid" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
 
     </LinearLayout>
 

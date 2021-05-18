@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.net.Uri;
@@ -13,6 +14,10 @@ import android.net.Uri;
 import java.net.URI;
 
 public class ClickedItemActivity extends AppCompatActivity {
+    ImageButton home;
+    ImageButton studiekort;
+    ImageButton settings;
+    ImageButton kategorier;
 
     ImageView imageView;
     TextView textView;
@@ -63,5 +68,59 @@ public class ClickedItemActivity extends AppCompatActivity {
             mapsPage.setData(Uri.parse(mapsurl));
             startActivity(mapsPage);
         });
+
+        //Bottom menu buttons start here
+        home = findViewById(R.id.homeBtn);
+        home.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                loadHome();
+            }
+        });
+
+        kategorier = findViewById(R.id.kategoriBtn);
+        kategorier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadKategori();
+            }
+        });
+
+        studiekort = findViewById(R.id.studiekortBtn);
+        studiekort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadStudiekort();
+            }
+        });
+
+        settings = findViewById(R.id.settingsBtn);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSettings();
+            }
+        });
+    }
+    //Bottom menu button functions
+    private void loadHome() {
+        Intent home = new Intent(this,homepage1.class);
+        startActivity(home);
+    }
+
+    private void loadKategori() {
+        Intent kategori = new Intent(this,categories.class);
+        startActivity(kategori);
+    }
+
+    private void loadStudiekort() {
+        Intent studiekort = new Intent(this,Studiekort.class);
+        startActivity(studiekort);
+    }
+
+    private void loadSettings() {
+        Intent setting = new Intent(this,Settings.class);
+        startActivity(setting);
     }
 }
