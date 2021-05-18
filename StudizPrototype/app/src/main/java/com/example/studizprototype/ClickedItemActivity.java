@@ -51,10 +51,28 @@ public class ClickedItemActivity extends AppCompatActivity {
             String selectedName = intent.getStringExtra("name");
             int selectedImage = intent.getIntExtra("image", 0);
             String selectedDescription = intent.getStringExtra("description");
+            String selectedUrl = intent.getStringExtra("url");
 
             textView.setText(selectedName);
             imageView.setImageResource(selectedImage);
             descriptiontxt.setText(selectedDescription);
+            String discountUrl = selectedUrl;
+
+            discount = findViewById(R.id.buttondiscount);
+            discount.setOnClickListener((v) -> {
+                //notifications code
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(ClickedItemActivity.this, "My Notification");
+                builder.setContentTitle("Rabat Tilføjet");
+                builder.setContentText("Rabat kan bruges nu");
+                builder.setSmallIcon(R.drawable.studiz);
+                builder.setAutoCancel(true);
+                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(ClickedItemActivity.this);
+                managerCompat.notify(1,builder.build());
+                //noti code done
+                Intent discPage = new Intent(Intent.ACTION_VIEW);
+                discPage.setData(Uri.parse(discountUrl));
+                startActivity(discPage);
+            });
         }
     //sørger for at notifications bliver vist uanset hvilken update man er på
     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -62,21 +80,7 @@ public class ClickedItemActivity extends AppCompatActivity {
          NotificationManager manager = getSystemService(NotificationManager.class);
          manager.createNotificationChannel(channel);
     }
-        discount = findViewById(R.id.buttondiscount);
-        discount.setOnClickListener((v) -> {
-            //notifications code
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(ClickedItemActivity.this, "My Notification");
-            builder.setContentTitle("Rabat Tilføjet");
-            builder.setContentText("Rabat kan bruges nu");
-            builder.setSmallIcon(R.drawable.studiz);
-            builder.setAutoCancel(true);
-            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(ClickedItemActivity.this);
-            managerCompat.notify(1,builder.build());
-            //noti code done
-            Intent discPage = new Intent(Intent.ACTION_VIEW);
-            discPage.setData(Uri.parse(disurl));
-            startActivity(discPage);
-        });
+
 
         maps = findViewById(R.id.buttonmaps);
         maps.setOnClickListener((v) -> {

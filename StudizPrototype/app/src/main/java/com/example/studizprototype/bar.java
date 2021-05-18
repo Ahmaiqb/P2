@@ -37,6 +37,11 @@ public class bar extends AppCompatActivity {
             "Amstel", "Bacardi", "Baileys", "Captain Morgan", "Heineken", "Jagermeister", "TGI Friday"
     };
 
+    String[] url = {
+            "https://www.amstel.com/", "https://www.bacardi.com/us/en/", "https://www.baileys.com/en-us/", "https://www.captainmorgan.com/en-us/products/",
+            "https://www.heineken.com/dk/da/agegateway?returnurl=%2fglobal%2fen%2fhome", "https://www.jagermeister.com/en-US/", "https://www.tgifridays.com/"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +61,9 @@ public class bar extends AppCompatActivity {
                 String selectedName = names[position];
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
+                String selectedUrl = url[position];
 
-                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription));
+                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
             }
         });
 
