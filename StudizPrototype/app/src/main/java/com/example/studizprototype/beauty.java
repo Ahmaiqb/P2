@@ -40,8 +40,16 @@ public class beauty extends AppCompatActivity {
     };
 
     String[] url = {
-            "Dove", "L'ORÉAL", "MAC",
-            "Nivea", "NYX"
+            //dove
+            "https://www.dove.com/dk/home.html?gclid=CjwKCAjwy42FBhB2EiwAJY0yQsliK_oYAyMhdoXk7zXNGCBZwp-ELSJb8fNY4EhVfzBuG8lISE0z0hoCt-sQAvD_BwE&gclsrc=aw.ds",
+            //L'ORÉAL
+            "https://www.lorealparis.dk",
+            //MAC Cosmetics
+            "https://www.maccosmetics.com",
+            //Nivea
+            "https://www.nivea.dk",
+            //nyx
+            "https://www.nyxcosmetics.com"
     };
 
     @Override
