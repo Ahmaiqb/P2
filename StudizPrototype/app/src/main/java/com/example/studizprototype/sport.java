@@ -45,17 +45,17 @@ public class sport extends AppCompatActivity {
 
     String[] maps = {
             //Asics
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //Fila
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //Nike
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //Adidas
             "https://www.google.com/maps/dir//Pilestr%C3%A6de+8B++1112+K%C3%B8benhavn+K/@55.6604133,12.5617215,14z/data=!4m2!4m1!3e1",
             //Lifetime Fitness
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //Fitbit
-            "www.google.dk/maps"
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
     @Override
