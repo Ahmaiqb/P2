@@ -8,11 +8,13 @@
     android:elevation="4dp"
     android:padding="2dp"
     app:cardBackgroundColor="#FFFFFF"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    >
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
 
         <ImageView
@@ -22,7 +24,8 @@
             android:layout_centerHorizontal="true"
             android:padding="10dp"
             android:scaleType="centerInside"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            />
 
         <TextView
             android:id="@+id/tvName"
@@ -30,6 +33,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView"
             android:layout_centerHorizontal="true"
-            android:text="Name" />
+            android:text="Name"
+
+            />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
