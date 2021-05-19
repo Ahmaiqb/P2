@@ -47,8 +47,22 @@ public class shopping extends AppCompatActivity {
     };
 
     String[] maps = {
-            "Bilka", "Føtex", "Home & Harmony",
-            "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
+            //Bilka
+            "https://www.google.dk/maps/search/bilka/@55.6605086,12.5617337,13z/data=!3m1!4b1",
+            //Føtex
+            "https://www.google.dk/maps/search/f%C3%B8tex/@55.6605955,12.5617337,13z/data=!3m1!4b1",
+            //Home & Harmony
+            "https://www.google.dk/maps/place/Living+In+Harmony/@55.6775092,12.3894285,17z/data=!3m1!4b1!4m5!3m4!1s0x465250c8a41421bb:0xaa01fe17621c7213!8m2!3d55.6775062!4d12.3916172",
+            //IKEA
+            "https://www.google.dk/maps/search/ikea/@55.6775556,12.3565979,13z/data=!3m1!4b1",
+            //ILVA
+            "https://www.google.dk/maps/search/ilva/@55.6776424,12.3565979,13z/data=!3m1!4b1",
+            //Jysk
+            "https://www.google.dk/maps/search/jysk/@55.6777293,12.3565979,13z/data=!3m1!4b1",
+            //Netto
+            "https://www.google.dk/maps/search/Netto/@55.6718146,12.4894638,13z",
+            //Home Depot
+            "https://www.google.dk/maps/search/Home+depot/@55.6719015,12.4894638,13z/data=!3m1!4b1"
 
     };
 
