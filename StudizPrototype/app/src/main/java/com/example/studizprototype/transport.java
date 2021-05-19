@@ -51,6 +51,11 @@ public class transport extends AppCompatActivity {
             "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
+    String[] discount = {
+            "DSB", "Hastings Hotel", "Hilton",
+            "SAS", "SKY Travel"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,8 +77,15 @@ public class transport extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
+                String selecteddc = discount[position];
 
-                startActivity(new Intent(transport.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(transport.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 
