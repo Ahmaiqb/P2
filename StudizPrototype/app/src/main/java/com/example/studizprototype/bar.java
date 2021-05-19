@@ -87,7 +87,8 @@ public class bar extends AppCompatActivity {
                 String selecteddc = discount[position];
 
                 startActivity(new Intent(bar.this, ClickedItemActivity.class)
-                        .putExtra("name", selectedName).putExtra("image", selectedImage)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
                         .putExtra("description", selectedDescription)
                         .putExtra("url", selectedUrl)
                         .putExtra("maps", selectedMaps)
