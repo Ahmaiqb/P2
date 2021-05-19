@@ -52,8 +52,16 @@ public class beauty extends AppCompatActivity {
     };
 
     String[] maps = {
-            "Dove", "L'ORÉAL", "MAC",
-            "Nivea", "NYX"
+            //dove
+            "https://www.google.dk/maps/",
+            //loreal
+            "https://www.google.dk/maps/dir//L'Oréal+Danmark,+Havneholmen+25,+1561+København/@55.6613654,12.5613419,17z/data=!4m16!1m6!3m5!1s0x4652573226cfe82f:0xf34f55d28ef0faca!2sL'Oréal+Danmark!8m2!3d55.6613624!4d12.5635359!4m8!1m0!1m5!1m1!1s0x4652573226cfe82f:0xf34f55d28ef0faca!2m2!1d12.5635359!2d55.6613624!3e3",
+            //MAC
+            "https://www.google.dk/maps/dir//MAC+Cosmetics,+Kongens+Nytorv+13,+1050+København/@55.6801509,12.5817051,17z/data=!3m1!5s0x46525317a25ae95b:0xc6815eaa06fe51c!4m17!1m7!3m6!1s0x0:0x3210dc8edddd714e!2sMAC+Cosmetics!8m2!3d55.6791605!4d12.5832215!15sCg1tYWMgY29zbWV0aWNzIgOIAQGSAQ9jb3NtZXRpY3Nfc3RvcmU!4m8!1m0!1m5!1m1!1s0x465253170a8823fd:0x3210dc8edddd714e!2m2!1d12.5832215!2d55.6791605!3e3",
+            //nivea
+            "https://www.google.dk/maps/",
+            //NYX
+            "https://www.google.dk/maps/"
     };
 
     @Override
