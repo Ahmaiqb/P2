@@ -60,7 +60,7 @@ public class bar extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Amstel", "Bacardi", "Baileys", "Captain Morgan", "Heineken", "Jagermeister", "TGI Friday"
+            "20%", "15%", "10%", "20%", "15%", "20%", "10%"
     };
 
     @Override
