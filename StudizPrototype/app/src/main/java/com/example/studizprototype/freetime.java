@@ -55,8 +55,18 @@ public class freetime extends AppCompatActivity {
     };
 
     String[] maps = {
-            "AMF", "Film Casino", "Imax",
-            "Monthly Fishing Magazines", "Netflix", "Skyzone"
+            //amf
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //film casino
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //IMAX
+            "https://www.google.dk/maps/dir//CinemaxX,+Kalvebod+Brygge,+København/@55.6627257,12.4925712,12z/data=!3m2!4b1!5s0x46525317339fd057:0x43fbb14d568e0eef!4m9!4m8!1m0!1m5!1m1!1s0x465253702c776715:0xc83b4c761e13204d!2m2!1d12.5627821!2d55.6626489!3e3",
+            //monthly fishing
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //netflix
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //skyzone
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
     @Override

@@ -59,8 +59,22 @@ public class it extends AppCompatActivity {
     };
 
     String[] maps = {
-            "Alienware", "Computer City", "Computer World",
-            "DELL", "HP", "XBOX", "Apple", "Microsoft"
+            //alienware
+            "https://www.google.dk/maps/dir//Alienware+Training+Facility,+Moreelsehoek,+Utrecht,+Holland/@52.0895188,5.0417205,12z/data=!3m2!4b1!5s0x46525317339fd057:0x43fbb14d568e0eef!4m9!4m8!1m0!1m5!1m1!1s0x47c66f3584a07967:0x273078ee2afa8ac!2m2!1d5.1119315!2d52.0894342!3e3",
+            //computer city
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //computer world
+            "https://www.google.dk/maps/dir//Computerworld,+Hørkær,+Herlev/@55.7190917,12.365726,12z/data=!3m2!4b1!5s0x46525317339fd057:0x43fbb14d568e0eef!4m9!4m8!1m0!1m5!1m1!1s0x465251c42f593f39:0x50f4a424adb7dffe!2m2!1d12.4360042!2d55.7190004!3e3",
+            //Dell
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //hp
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //xbox
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //apple
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
+            //microsoft
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
     @Override

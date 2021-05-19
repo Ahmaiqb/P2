@@ -45,7 +45,12 @@ public class health extends AppCompatActivity {
     };
 
     String[] maps = {
-            "Apotek", "Hello Fresh", "Natural Health"
+            //apotek
+            "https://www.google.dk/maps/dir//Apoteket+Trianglen,+Nordre+Frihavnsgade,+København/@55.7000298,12.5077884,12z/data=!3m2!4b1!5s0x46525317339fd057:0x43fbb14d568e0eef!4m9!4m8!1m0!1m5!1m1!1s0x465252fb13e69f17:0xd6a77621d873199f!2m2!1d12.5779993!2d55.6999531!3e3",
+            //hello fresh
+            "https://www.google.dk/maps/dir//Hello+Fresh+Ab,+Billesholmsvägen,+Bjuv,+Sverige/@56.0749905,12.8716137,12z/data=!3m2!4b1!5s0x46525317339fd057:0x43fbb14d568e0eef!4m9!4m8!1m0!1m5!1m1!1s0x4653d36f7d0791e7:0x5f95756cea43b217!2m2!1d12.9418961!2d56.0750195!3e3",
+            //natural health
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
     @Override
