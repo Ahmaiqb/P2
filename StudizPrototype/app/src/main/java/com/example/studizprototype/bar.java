@@ -44,17 +44,17 @@ public class bar extends AppCompatActivity {
 
     String[] maps = {
             //amstel
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //bacardi
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //baileys
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //cap morgan
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //heineken
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //jagermeister
-            "www.google.dk/maps",
+            "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3",
             //tgi friday
             "https://www.google.dk/maps/dir//TGI+Fridays+Copenhagen,+Højbro+Pl.+5,+1200+København/@55.6793831,12.5768932,16z/data=!3m1!5s0x4652531724345eab:0x199885380bcb9a33!4m16!1m6!3m5!1s0x4652531725c4e37f:0x31564a9b3216749b!2sTGI+Fridays+Copenhagen!8m2!3d55.6786572!4d12.5800903!4m8!1m0!1m5!1m1!1s0x4652531725c4e37f:0x31564a9b3216749b!2m2!1d12.5800903!2d55.6786572!3e3"
     };
