@@ -27,6 +27,7 @@ public class ClickedItemActivity extends AppCompatActivity {
     ImageView imageView;
     TextView textView;
     TextView descriptiontxt;
+    TextView rabatprocent;
 
     Button discount;
     String disurl = "https://kfc.dk/";
@@ -44,6 +45,7 @@ public class ClickedItemActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.tvName);
         descriptiontxt = findViewById(R.id.descriptiontext);
+        rabatprocent = findViewById(R.id.Rabatprocent);
 
         Intent intent = getIntent();
 
@@ -58,6 +60,7 @@ public class ClickedItemActivity extends AppCompatActivity {
             textView.setText(selectedName);
             imageView.setImageResource(selectedImage);
             descriptiontxt.setText(selectedDescription);
+            rabatprocent.setText(selecteddc);
             String discountUrl = selectedUrl;
 
             discount = findViewById(R.id.buttondiscount);
