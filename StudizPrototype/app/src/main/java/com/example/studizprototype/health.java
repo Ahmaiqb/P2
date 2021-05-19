@@ -53,7 +53,7 @@ public class health extends AppCompatActivity {
             "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
     String[] discount = {
-            "Apotek", "Hello Fresh", "Natural Health"
+            "20%", "5%", "15%"
     };
 
     @Override

@@ -70,8 +70,8 @@ public class freetime extends AppCompatActivity {
     };
 
     String[] discount = {
-            "AMF", "Film Casino", "Imax",
-            "Monthly Fishing Magazines", "Netflix", "Skyzone"
+            "20%", "15%", "10%",
+            "25%", "20%", "10%"
     };
 
     @Override

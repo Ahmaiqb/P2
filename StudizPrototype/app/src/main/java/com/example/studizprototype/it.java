@@ -78,8 +78,8 @@ public class it extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Alienware", "Computer City", "Computer World",
-            "DELL", "HP", "XBOX", "Apple", "Microsoft"
+            "20%", "15%", "10%",
+            "30%", "15%", "10%", "25%", "15%"
     };
 
     @Override

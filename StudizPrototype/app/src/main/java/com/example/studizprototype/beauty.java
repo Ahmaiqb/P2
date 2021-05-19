@@ -65,8 +65,8 @@ public class beauty extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Dove", "L'ORÉAL", "MAC",
-            "Nivea", "NYX"
+            "15%", "25%", "20%",
+            "10%", "15%"
     };
 
     @Override

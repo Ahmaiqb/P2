@@ -71,8 +71,8 @@ public class books extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Arnold Busck", "IDG Books", "Saxo",
-            "Study Express", "Warner Books", "Academic Books",
+            "25%", "10%", "15%",
+            "30%", "25%", "15%",
     };
 
     @Override

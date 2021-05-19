@@ -78,8 +78,8 @@ public class fashion extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Asics", "Calvin Klein", "Diesel",
-            "Fila", "Mango", "Nike", "Zara", "H&M"
+            "25%", "10%", "20%",
+            "20%", "15%", "10%", "10%", "30%"
     };
 
     @Override
