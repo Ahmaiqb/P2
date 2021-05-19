@@ -79,12 +79,14 @@ public class health extends AppCompatActivity {
                 String selectedMaps = maps[position];
                 String selecteddc = discount[position];
 
+
                 startActivity(new Intent(health.this, ClickedItemActivity.class)
                         .putExtra("name", selectedName)
                         .putExtra("image", selectedImage)
                         .putExtra("description", selectedDescription)
                         .putExtra("url", selectedUrl)
-                        .putExtra("maps", selectedMaps));
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 

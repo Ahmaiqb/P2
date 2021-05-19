@@ -55,6 +55,11 @@ public class restaurant extends AppCompatActivity {
             "https://www.google.dk/maps/place/YO!+Sushi/@55.6282945,12.6466089,17z/data=!3m2!4b1!5s0x4653ab6fc2e10d0b:0x55f0c5880f36be4b!4m5!3m4!1s0x4653ab3d9c7f4f25:0x254835f3e4056769!8m2!3d55.6282915!4d12.6487976"
     };
 
+    String[] discount = {
+            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
+            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,8 +81,15 @@ public class restaurant extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
+                String selecteddc = discount[position];
 
-                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(restaurant.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 

@@ -195,6 +195,13 @@ public class homepage1 extends AppCompatActivity {
             "https://www.google.dk/maps/place/R%C3%A5dhuspladsen+55,+1550+K%C3%B8benhavn/@55.676448,12.5674966,17z/data=!3m1!4b1!4m5!3m4!1s0x4652531201b542c7:0x32d050afb5bb0788!8m2!3d55.676448!4d12.5696853", "Føtex"
     };
 
+    String[] discount = {
+            "H&M", "adidas", "Adobe",
+            "Airbnb", "Warner books", "Bacardi",
+            "Mcdonald's", "Academic books", "Apple",
+            "Heineken", "KFC", "Føtex"
+    };
+
 
 
     @SuppressLint("WrongViewCast")
@@ -219,10 +226,16 @@ public class homepage1 extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
-
+                String selecteddc = discount[position];
                 
 
-                startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(homepage1.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
 
             }
         });
