@@ -171,10 +171,28 @@ public class homepage1 extends AppCompatActivity {
     };
 
     String[] maps = {
-            "H&M", "adidas", "Adobe",
-            "Airbnb", "Warner books", "Bacardi",
-            "Mcdonald's", "Academic books", "Apple",
-            "Heineken", "https://www.google.dk/maps/place/R%C3%A5dhuspladsen+55,+1550+K%C3%B8benhavn/@55.676448,12.5674966,17z/data=!3m1!4b1!4m5!3m4!1s0x4652531201b542c7:0x32d050afb5bb0788!8m2!3d55.676448!4d12.5696853", "Føtex"
+            //hm
+            "https://www.google.dk/maps/dir//H%26M,+Amagertorv+23,+1160+København/@55.6782567,12.5780379,17.75z/data=!4m17!1m7!3m6!1s0x0:0x5b5746b3e3f8cea5!2zSCZN!8m2!3d55.6784092!4d12.5775246!15sCgJobSIDiAEBWggKAmhtIgJobZIBDmNsb3RoaW5nX3N0b3Jl!4m8!1m0!1m5!1m1!1s0x46525310df49fc87:0x5b5746b3e3f8cea5!2m2!1d12.5775246!2d55.6784092!3e3",
+            //adidas
+            "https://www.google.dk/maps/dir//Adidas+Originals,+Pilestræde+8A,+1112+København/@55.6713032,12.5426756,13z/data=!3m1!5s0x46525317440584a7:0xd3a3887703937de3!4m17!1m7!3m6!1s0x0:0x24e3b2c666ae4944!2sAdidas+Originals!8m2!3d55.6797826!4d12.5811139!15sCgZhZGlkYXMiA4gBAVoQCgZhZGlkYXMiBmFkaWRhc5IBEHNwb3J0c3dlYXJfc3RvcmU!4m8!1m0!1m5!1m1!1s0x4652531741475277:0x24e3b2c666ae4944!2m2!1d12.5811139!2d55.6797826!3e3",
+            //Adobe
+            "www.google.dk/maps",
+            //airbnb
+            "www.google.dk/maps",
+            //Warner books
+            "www.google.dk/maps",
+            //bacardi
+            "www.google.dk/maps",
+            //mcd
+            "https://www.google.dk/maps/dir//McDonald's,+Københavns+Hovedbanegård,+1570+København+V/@55.6697239,12.5705923,16z/data=!3m1!5s0x4652530d3d771e55:0x6e3ce34b77d3738c!4m17!1m7!3m6!1s0x0:0x4eff518d101382f8!2sMcDonald's!8m2!3d55.6727088!4d12.5645056!15sCgptY2RvbmFsZCdzIgOIAQFaGAoKbWNkb25hbGQncyIKbWNkb25hbGQnc5IBFGZhc3RfZm9vZF9yZXN0YXVyYW50!4m8!1m0!1m5!1m1!1s0x4652530d0feb0007:0x4eff518d101382f8!2m2!1d12.5645056!2d55.6727088!3e3",
+            //academic books
+            "https://www.google.dk/maps/dir//Academic+Books,+Nørre+Allé+20,+2200+København/@55.6849174,12.5682881,14z/data=!4m17!1m7!3m6!1s0x0:0x289fb4247c47c00e!2sAcademic+Books!8m2!3d55.694794!4d12.5616377!15sCg5hY2FkZW1pYyBib29rcyIDiAEBkgEKYm9va19zdG9yZQ!4m8!1m0!1m5!1m1!1s0x46525300255f6c2f:0x289fb4247c47c00e!2m2!1d12.5616377!2d55.694794!3e3",
+            //apple
+            "www.google.dk/maps",
+            //heineken
+            "www.google.dk/maps",
+            //?
+            "https://www.google.dk/maps/place/R%C3%A5dhuspladsen+55,+1550+K%C3%B8benhavn/@55.676448,12.5674966,17z/data=!3m1!4b1!4m5!3m4!1s0x4652531201b542c7:0x32d050afb5bb0788!8m2!3d55.676448!4d12.5696853", "Føtex"
     };
 
 
