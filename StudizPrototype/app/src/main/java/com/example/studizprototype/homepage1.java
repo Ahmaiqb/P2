@@ -220,6 +220,8 @@ public class homepage1 extends AppCompatActivity {
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
 
+                
+
                 startActivity(new Intent(homepage1.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
 
             }

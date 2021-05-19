@@ -1,533 +1,534 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".categories">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <Button
-                android:id="@+id/søge"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goToSearch"
-                android:padding="10dp" />
-
-
-            <EditText
-                android:id="@+id/btnToSearch"
-                android:layout_width="350dp"
-                android:layout_centerHorizontal="true"
-                android:layout_height="match_parent"
-                android:hint="Search..."
-                android:textColorHint="@color/white"
-                android:onClick="goToSearch"
-                android:layout_marginTop="0dp"
-                />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <Button
-                android:id="@+id/bar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTobar"
-                android:padding="20dp" />
-
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTobar"
-                android:padding="25dp"
-                android:text="@string/catbar"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTobar"
-                android:src="@drawable/catbar" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTobooks"
-                android:padding="25dp"
-                android:text="@string/catbooks"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTobooks"
-                android:src="@drawable/catbooks" />
-
-            <Button
-                android:id="@+id/books"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTobooks"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTorestaurant"
-                android:padding="25dp"
-                android:text="@string/catrestaurant"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTorestaurant"
-                android:src="@drawable/catrestaurant" />
-
-            <Button
-                android:id="@+id/restaurant"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTorestaurant"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners">
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goToit"
-                android:padding="25dp"
-                android:text="@string/catelectronic"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goToit"
-                android:src="@drawable/catelectronic" />
-
-            <Button
-                android:id="@+id/it"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goToit"
-                android:padding="20dp" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTofreetime"
-                android:padding="25dp"
-                android:text="@string/catfreetime"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTofreetime"
-                android:src="@drawable/catfreetime" />
-
-            <Button
-                android:id="@+id/freetime"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTofreetime"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goToshopping"
-                android:padding="25dp"
-                android:text="@string/catshop"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goToshopping"
-                android:src="@drawable/catshop" />
-
-            <Button
-                android:id="@+id/shopping"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goToshopping"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTofashion"
-                android:padding="25dp"
-                android:text="@string/catfashion"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTofashion"
-                android:src="@drawable/catfashion" />
-
-            <Button
-                android:id="@+id/fashion"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTofashion"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTotransport"
-                android:padding="25dp"
-                android:text="@string/cattransport"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTotransport"
-                android:src="@drawable/cattransport" />
-
-            <Button
-                android:id="@+id/transport"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTotransport"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTobeauty"
-                android:padding="25dp"
-                android:text="@string/catbeauty"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTobeauty"
-                android:src="@drawable/catbeauty" />
-
-            <Button
-                android:id="@+id/beauty"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTobeauty"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTosport"
-                android:padding="25dp"
-                android:text="@string/catsport"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTosport"
-                android:src="@drawable/catsport" />
-
-            <Button
-                android:id="@+id/sport"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTosport"
-                android:padding="20dp" />
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_corners"
-            >
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:onClick="goTohealth"
-                android:padding="25dp"
-                android:text="@string/cathealt"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:onClick="goTohealth"
-                android:src="@drawable/cathealt" />
-
-            <Button
-                android:id="@+id/health"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:background="#00000000"
-                android:onClick="goTohealth"
-                android:padding="20dp" />
-            
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".categories"
+        >
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp">
+            android:layout_margin="0dp"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:orientation="horizontal"
-                android:background="@color/studizfarve"
-                app:layout_constraintBottom_toBottomOf="parent">
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
 
-                <ImageButton
-                    android:id="@+id/homeBtn"
+                <Button
+                    android:id="@+id/søge"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/studizlys"
-                    android:src="@drawable/ic_baseline_home_hvid" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goToSearch"
+                    android:padding="10dp" />
 
-                <ImageButton
-                    android:id="@+id/kategoriBtn"
+
+                <EditText
+                    android:id="@+id/btnToSearch"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:hint="Search..."
+                    android:onClick="goToSearch"
+                    android:textColorHint="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <Button
+                    android:id="@+id/bar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/studizfarve"
-                    android:src="@drawable/ic_baseline_category_hvid" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTobar"
+                    android:padding="20dp" />
 
-                <ImageButton
-                    android:id="@+id/studiekortBtn"
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTobar"
+                    android:padding="25dp"
+                    android:text="@string/catbar"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTobar"
+                    android:src="@drawable/catbar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTobooks"
+                    android:padding="25dp"
+                    android:text="@string/catbooks"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTobooks"
+                    android:src="@drawable/catbooks" />
+
+                <Button
+                    android:id="@+id/books"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/studizlys"
-                    android:src="@drawable/ic_baseline_perm_identity_hvidkant" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTobooks"
+                    android:padding="20dp" />
 
-                <ImageButton
-                    android:id="@+id/settingsBtn"
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTorestaurant"
+                    android:padding="25dp"
+                    android:text="@string/catrestaurant"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTorestaurant"
+                    android:src="@drawable/catrestaurant" />
+
+                <Button
+                    android:id="@+id/restaurant"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/studizlys"
-                    android:src="@drawable/ic_baseline_settings_hvid" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTorestaurant"
+                    android:padding="20dp" />
 
-            </LinearLayout>
-        </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goToit"
+                    android:padding="25dp"
+                    android:text="@string/catelectronic"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
 
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goToit"
+                    android:src="@drawable/catelectronic" />
 
-</ScrollView>
+                <Button
+                    android:id="@+id/it"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goToit"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTofreetime"
+                    android:padding="25dp"
+                    android:text="@string/catfreetime"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTofreetime"
+                    android:src="@drawable/catfreetime" />
+
+                <Button
+                    android:id="@+id/freetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTofreetime"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goToshopping"
+                    android:padding="25dp"
+                    android:text="@string/catshop"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goToshopping"
+                    android:src="@drawable/catshop" />
+
+                <Button
+                    android:id="@+id/shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goToshopping"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTofashion"
+                    android:padding="25dp"
+                    android:text="@string/catfashion"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTofashion"
+                    android:src="@drawable/catfashion" />
+
+                <Button
+                    android:id="@+id/fashion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTofashion"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTotransport"
+                    android:padding="25dp"
+                    android:text="@string/cattransport"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTotransport"
+                    android:src="@drawable/cattransport" />
+
+                <Button
+                    android:id="@+id/transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTotransport"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTobeauty"
+                    android:padding="25dp"
+                    android:text="@string/catbeauty"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTobeauty"
+                    android:src="@drawable/catbeauty" />
+
+                <Button
+                    android:id="@+id/beauty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTobeauty"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTosport"
+                    android:padding="25dp"
+                    android:text="@string/catsport"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTosport"
+                    android:src="@drawable/catsport" />
+
+                <Button
+                    android:id="@+id/sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTosport"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corners">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="goTohealth"
+                    android:padding="25dp"
+                    android:text="@string/cathealt"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="goTohealth"
+                    android:src="@drawable/cathealt" />
+
+                <Button
+                    android:id="@+id/health"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="goTohealth"
+                    android:padding="20dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom"
+        android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/studizfarve"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/studizlys"
+                android:src="@drawable/ic_baseline_home_hvid" />
+
+            <ImageButton
+                android:id="@+id/kategoriBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/studizfarve"
+                android:src="@drawable/ic_baseline_category_hvid" />
+
+            <ImageButton
+                android:id="@+id/studiekortBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/studizlys"
+                android:src="@drawable/ic_baseline_perm_identity_hvidkant" />
+
+            <ImageButton
+                android:id="@+id/settingsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/studizlys"
+                android:src="@drawable/ic_baseline_settings_hvid" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
