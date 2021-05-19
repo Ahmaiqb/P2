@@ -52,6 +52,7 @@ public class ClickedItemActivity extends AppCompatActivity {
             int selectedImage = intent.getIntExtra("image", 0);
             String selectedDescription = intent.getStringExtra("description");
             String selectedUrl = intent.getStringExtra("url");
+            String selectedMaps = intent.getStringExtra("maps");
 
             textView.setText(selectedName);
             imageView.setImageResource(selectedImage);
@@ -73,6 +74,14 @@ public class ClickedItemActivity extends AppCompatActivity {
                 discPage.setData(Uri.parse(discountUrl));
                 startActivity(discPage);
             });
+
+            maps = findViewById(R.id.buttonmaps);
+            maps.setOnClickListener((v) -> {
+
+                Intent mapsPage = new Intent(Intent.ACTION_VIEW);
+                mapsPage.setData(Uri.parse(selectedMaps));
+                startActivity(mapsPage);
+            });
         }
     //sørger for at notifications bliver vist uanset hvilken update man er på
     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -82,13 +91,7 @@ public class ClickedItemActivity extends AppCompatActivity {
     }
 
 
-        maps = findViewById(R.id.buttonmaps);
-        maps.setOnClickListener((v) -> {
 
-            Intent mapsPage = new Intent(Intent.ACTION_VIEW);
-            mapsPage.setData(Uri.parse(mapsurl));
-            startActivity(mapsPage);
-        });
 
         //Bottom menu buttons start here
         home = findViewById(R.id.homeBtn);

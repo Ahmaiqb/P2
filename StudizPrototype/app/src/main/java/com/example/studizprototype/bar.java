@@ -42,6 +42,10 @@ public class bar extends AppCompatActivity {
             "https://www.heineken.com/dk/da/agegateway?returnurl=%2fglobal%2fen%2fhome", "https://www.jagermeister.com/en-US/", "https://www.tgifridays.com/"
     };
 
+    String[] maps = {
+            "Amstel", "Bacardi", "Baileys", "Captain Morgan", "Heineken", "Jagermeister", "TGI Friday"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +66,9 @@ public class bar extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(bar.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 

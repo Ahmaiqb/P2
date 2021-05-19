@@ -44,8 +44,9 @@ public class shopping extends AppCompatActivity {
     String[] url = {
             "https://www.bilka.dk/", "https://www.foetex.dk/", "https://homes-harmony.com/",
             "https://www.ikea.com/", "http://www.ilva.dk", "https://www.jysk.com/", "https://netto.dk/", "https://www.homedepot.com/"
-
     };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
