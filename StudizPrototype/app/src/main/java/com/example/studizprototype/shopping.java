@@ -67,8 +67,8 @@ public class shopping extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Bilka", "Føtex", "Home & Harmony",
-            "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
+            "25%", "10%", "20%",
+            "15%", "10%", "20%", "15%", "10%"
 
     };
 

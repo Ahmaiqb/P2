@@ -56,8 +56,8 @@ public class restaurant extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
-            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+            "30%", "20%", "10%",
+            "15%", "5%", "20%", "25%", "10%"
     };
 
     @Override

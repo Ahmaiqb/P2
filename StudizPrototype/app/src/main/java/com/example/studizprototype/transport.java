@@ -52,8 +52,8 @@ public class transport extends AppCompatActivity {
     };
 
     String[] discount = {
-            "DSB", "Hastings Hotel", "Hilton",
-            "SAS", "SKY Travel"
+            "10%", "20%", "10%",
+            "20%", "15%"
     };
 
     @Override

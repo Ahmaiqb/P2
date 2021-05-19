@@ -59,8 +59,8 @@ public class sport extends AppCompatActivity {
     };
 
     String[] discount = {
-            "Asics", "Fila", "Nike",
-            "Adidas", "Lifetime Fitness", "Fitbit"
+            "10%", "20%", "15%",
+            "10%", "50%", "25%"
     };
 
     @Override
