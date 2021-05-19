@@ -66,20 +66,17 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTobar"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catbar"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTobar"
                 android:src="@drawable/catbar" />
 
@@ -97,12 +94,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTobooks"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catbooks"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -110,7 +105,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTobooks"
                 android:src="@drawable/catbooks" />
 
@@ -120,11 +114,10 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginRight="-1dp"
-                android:layout_marginBottom="0dp"
                 android:background="#00000000"
                 android:onClick="goTobooks"
                 android:padding="20dp" />
+
 
 
         </RelativeLayout>
@@ -141,12 +134,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTorestaurant"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catrestaurant"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -154,7 +145,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTorestaurant"
                 android:src="@drawable/catrestaurant" />
 
@@ -183,12 +173,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goToit"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catelectronic"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -196,7 +184,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goToit"
                 android:src="@drawable/catelectronic" />
 
@@ -225,12 +212,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTofreetime"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catfreetime"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -238,7 +223,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTofreetime"
                 android:src="@drawable/catfreetime" />
 
@@ -268,12 +252,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goToshopping"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catshop"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -281,7 +263,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goToshopping"
                 android:src="@drawable/catshop" />
 
@@ -311,12 +292,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTofashion"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catfashion"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -324,7 +303,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTofashion"
                 android:src="@drawable/catfashion" />
 
@@ -354,12 +332,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTotransport"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/cattransport"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -367,7 +343,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTotransport"
                 android:src="@drawable/cattransport" />
 
@@ -397,12 +372,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTobeauty"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catbeauty"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -410,7 +383,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTobeauty"
                 android:src="@drawable/catbeauty" />
 
@@ -440,12 +412,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTosport"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/catsport"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -453,7 +423,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTosport"
                 android:src="@drawable/catsport" />
 
@@ -483,12 +452,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:onClick="goTohealth"
-                android:padding="2dp"
+                android:padding="25dp"
                 android:text="@string/cathealt"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
 
 
@@ -496,7 +463,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
                 android:onClick="goTohealth"
                 android:src="@drawable/cathealt" />
 
