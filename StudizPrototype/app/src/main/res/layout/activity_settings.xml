@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-
-
     <TextView
         android:layout_width="362dp"
         android:layout_height="47dp"
         android:layout_marginTop="60dp"
         android:gravity="center_horizontal"
-        android:text="Du er logget ind som: "
+        android:text="Du er logget ind som: ***** "
         android:textAlignment="center"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="244dp"
         android:orientation="vertical"
@@ -35,34 +34,34 @@
         <TextView
             android:layout_width="400dp"
             android:layout_height="50dp"
+            android:gravity="center_horizontal"
             android:text="Indtast e-mail og password "
             android:textAlignment="center"
             android:textSize="25dp"
-            android:textStyle="bold"
-            android:gravity="center_horizontal" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="E-mail: "
+            android:gravity="center_horizontal"
+            android:text="E-mail: ************ "
             android:textAlignment="center"
-            android:textSize="20dp"
-            android:gravity="center_horizontal" />
+            android:textSize="20dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Password: "
+            android:gravity="center_horizontal"
+            android:text="Password: *********"
             android:textAlignment="center"
-            android:textSize="20dp"
-            android:gravity="center_horizontal" />
+            android:textSize="20dp" />
 
         <Button
             android:layout_width="300dp"
             android:layout_height="75dp"
             android:layout_marginLeft="50dp"
-            android:text="Opdater E-mail og Password"
-            android:backgroundTint="@color/knapBlå"/>
+            android:backgroundTint="@color/knapBlå"
+            android:text="Opdater E-mail og Password" />
 
 
     </LinearLayout>
@@ -73,26 +72,26 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.304">
 
         <TextView
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:gravity="center_horizontal"
             android:text="Studiekort billede "
             android:textAlignment="center"
             android:textSize="25dp"
-            android:textStyle="bold"
-            android:gravity="center_horizontal" />
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="300dp"
             android:layout_height="75dp"
             android:layout_marginLeft="50dp"
-            android:text="Ændre billede af studiekort"
-            android:backgroundTint="@color/knapBlå"/>
+            android:backgroundTint="@color/knapBlå"
+            android:text="Ændre billede af studiekort" />
 
     </LinearLayout>
 
