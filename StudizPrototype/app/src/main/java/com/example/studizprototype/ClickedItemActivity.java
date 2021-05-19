@@ -53,6 +53,7 @@ public class ClickedItemActivity extends AppCompatActivity {
             String selectedDescription = intent.getStringExtra("description");
             String selectedUrl = intent.getStringExtra("url");
             String selectedMaps = intent.getStringExtra("maps");
+            String selecteddc = intent.getStringExtra("discount");
 
             textView.setText(selectedName);
             imageView.setImageResource(selectedImage);

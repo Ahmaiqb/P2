@@ -70,6 +70,11 @@ public class books extends AppCompatActivity {
 
     };
 
+    String[] discount = {
+            "Arnold Busck", "IDG Books", "Saxo",
+            "Study Express", "Warner Books", "Academic Books",
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,8 +96,15 @@ public class books extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
+                String selecteddc = discount[position];
 
-                startActivity(new Intent(books.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(books.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 
