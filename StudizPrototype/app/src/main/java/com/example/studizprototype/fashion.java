@@ -58,6 +58,11 @@ public class fashion extends AppCompatActivity {
             "https://www2.hm.com/da_dk/index.html"
     };
 
+    String[] maps = {
+            "Asics", "Calvin Klein", "Diesel",
+            "Fila", "Mango", "Nike", "Zara", "H&M"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,8 +83,9 @@ public class fashion extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(fashion.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(fashion.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 
