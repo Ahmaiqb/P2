@@ -26,7 +26,6 @@ public class freetime extends AppCompatActivity {
     String[] names = {
             "AMF", "Film Casino", "Imax",
             "Monthly Fishing Magazines", "Netflix", "Skyzone"
-
     };
 
     int[] images = {
@@ -53,7 +52,11 @@ public class freetime extends AppCompatActivity {
             "www.netflix.com/",
             //skyzone
             "https://www.skyzone.com"
+    };
 
+    String[] maps = {
+            "AMF", "Film Casino", "Imax",
+            "Monthly Fishing Magazines", "Netflix", "Skyzone"
     };
 
     @Override
@@ -75,8 +78,9 @@ public class freetime extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(freetime.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(freetime.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 

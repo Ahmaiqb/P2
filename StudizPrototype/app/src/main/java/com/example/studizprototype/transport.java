@@ -43,6 +43,11 @@ public class transport extends AppCompatActivity {
             "https://www.sas.dk/", "https://www.skytravels.com/"
     };
 
+    String[] maps = {
+            "DSB", "Hastings Hotel", "Hilton",
+            "SAS", "SKY Travel"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +68,9 @@ public class transport extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(transport.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(transport.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 
