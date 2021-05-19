@@ -44,8 +44,8 @@ public class transport extends AppCompatActivity {
     };
 
     String[] maps = {
-            "DSB", "Hastings Hotel", "Hilton",
-            "SAS", "SKY Travel"
+            "www.google.dk/maps", "www.google.dk/maps", "www.google.dk/maps",
+            "www.google.dk/maps", "www.google.dk/maps"
     };
 
     @Override
