@@ -57,6 +57,12 @@ public class categories extends AppCompatActivity {
         startActivity(setting);
     }
 
+    public void goToSearch (View v){
+        // Capture an image in response to button
+        Intent intent = new Intent(this, search.class);
+        startActivity(intent);
+    }
+
     public void goTobar (View v){
         // Capture an image in response to button
         Intent intent = new Intent(this, bar.class);
