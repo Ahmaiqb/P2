@@ -77,6 +77,11 @@ public class it extends AppCompatActivity {
             "https://www.google.dk/maps/dir//ingen+lokation/@55.6754145,12.5109307,12z/data=!3m1!4b1!4m2!4m1!3e3"
     };
 
+    String[] discount = {
+            "20%", "15%", "10%",
+            "30%", "15%", "10%", "25%", "15%"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,8 +103,15 @@ public class it extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
+                String selecteddc = discount[position];
 
-                startActivity(new Intent(it.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(it.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName)
+                        .putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 

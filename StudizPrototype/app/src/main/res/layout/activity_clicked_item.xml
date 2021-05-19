@@ -38,6 +38,7 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
+
     <TextView
         android:id="@+id/descriptiontext"
         android:layout_width="343dp"
@@ -119,5 +120,17 @@
             android:src="@drawable/ic_baseline_settings_hvid" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Rabatprocent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:text="Procent"
+        android:textColor="#C43232"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

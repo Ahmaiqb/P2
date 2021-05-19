@@ -77,6 +77,11 @@ public class fashion extends AppCompatActivity {
             "https://www.google.dk/maps/dir//H%26M,+Amagertorv+23,+1160+København/@55.6782567,12.5780379,17.75z/data=!4m17!1m7!3m6!1s0x0:0x5b5746b3e3f8cea5!2zSCZN!8m2!3d55.6784092!4d12.5775246!15sCgJobSIDiAEBWggKAmhtIgJobZIBDmNsb3RoaW5nX3N0b3Jl!4m8!1m0!1m5!1m1!1s0x46525310df49fc87:0x5b5746b3e3f8cea5!2m2!1d12.5775246!2d55.6784092!3e3"
     };
 
+    String[] discount = {
+            "25%", "10%", "20%",
+            "20%", "15%", "10%", "10%", "30%"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,8 +103,14 @@ public class fashion extends AppCompatActivity {
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
                 String selectedMaps = maps[position];
+                String selecteddc = discount[position];
 
-                startActivity(new Intent(fashion.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
+                startActivity(new Intent(fashion.this, ClickedItemActivity.class)
+                        .putExtra("name", selectedName).putExtra("image", selectedImage)
+                        .putExtra("description", selectedDescription)
+                        .putExtra("url", selectedUrl)
+                        .putExtra("maps", selectedMaps)
+                        .putExtra("discount", selecteddc));
             }
         });
 
