@@ -46,6 +46,12 @@ public class shopping extends AppCompatActivity {
             "https://www.ikea.com/", "http://www.ilva.dk", "https://www.jysk.com/", "https://netto.dk/", "https://www.homedepot.com/"
     };
 
+    String[] maps = {
+            "Bilka", "Føtex", "Home & Harmony",
+            "IKEA", "ILVA", "Jysk", "Netto", "Home Depot"
+
+    };
+
 
 
     @Override
@@ -68,8 +74,9 @@ public class shopping extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(shopping.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(shopping.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 

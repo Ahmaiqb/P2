@@ -44,6 +44,11 @@ public class restaurant extends AppCompatActivity {
             "https://www.mcdonalds.com/", "https://molinositaliankitchen.com/", "https://www.teterestaurant.ae/", "https://kfc.dk/", "https://yosushi.com/"
     };
 
+    String[] maps = {
+            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
+            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +69,9 @@ public class restaurant extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(restaurant.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 

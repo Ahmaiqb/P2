@@ -25,7 +25,6 @@ public class health extends AppCompatActivity {
 
     String[] names = {
             "Apotek", "Hello Fresh", "Natural Health"
-
     };
 
     int[] images = {
@@ -43,7 +42,10 @@ public class health extends AppCompatActivity {
             "www.hellofresh.dk",
             //natural health
             "https://www.naturalhealthwoman.com"
+    };
 
+    String[] maps = {
+            "Apotek", "Hello Fresh", "Natural Health"
     };
 
     @Override
@@ -66,8 +68,9 @@ public class health extends AppCompatActivity {
                 int selectedImage = images[position];
                 String selectedDescription = descriptions[position];
                 String selectedUrl = url[position];
+                String selectedMaps = maps[position];
 
-                startActivity(new Intent(health.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl));
+                startActivity(new Intent(health.this, ClickedItemActivity.class).putExtra("name", selectedName).putExtra("image", selectedImage).putExtra("description", selectedDescription).putExtra("url", selectedUrl).putExtra("maps", selectedMaps));
             }
         });
 
