@@ -45,8 +45,14 @@ public class restaurant extends AppCompatActivity {
     };
 
     String[] maps = {
-            "Burger King", "Domino's Pizza", "Dunkin' Donuts",
-            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+            "https://www.google.dk/maps/search/burger+king/@55.6719883,12.4894638,13z/data=!3m1!4b1",
+            "https://www.google.dk/maps/search/domino's+pizza/@55.6720751,12.4894638,13z/data=!3m1!4b1",
+            "https://www.google.dk/maps/place/Dunkin'/@55.6726776,12.563356,17z/data=!3m1!4b1!4m5!3m4!1s0x4652530d1590045b:0xda7b41e5ecf5a8e7!8m2!3d55.6726746!4d12.5655447",
+            "https://www.google.dk/maps/search/mcdonald's/@55.6809105,12.5635813,12z/data=!3m1!4b1",
+            "https://www.google.dk/maps/search/molinos+pizza/@55.7155917,12.5014201,12z",
+            "https://www.google.dk/maps/search/tet%C3%A9/@55.7157452,12.50142,12z/data=!3m1!4b1",
+            "https://www.google.dk/maps/search/kfc/@55.6666493,12.3661508,11z",
+            "https://www.google.dk/maps/place/YO!+Sushi/@55.6282945,12.6466089,17z/data=!3m2!4b1!5s0x4653ab6fc2e10d0b:0x55f0c5880f36be4b!4m5!3m4!1s0x4653ab3d9c7f4f25:0x254835f3e4056769!8m2!3d55.6282915!4d12.6487976"
     };
 
     @Override
