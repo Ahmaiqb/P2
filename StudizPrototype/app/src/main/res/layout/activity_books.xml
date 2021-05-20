@@ -79,7 +79,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/ic_baseline_category_hvid" />
+            android:src="@drawable/kategori_logo2"
+            android:scaleType="centerInside"/>
 
         <ImageButton
             android:id="@+id/studiekortBtn"
