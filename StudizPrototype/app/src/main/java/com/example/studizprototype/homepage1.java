@@ -36,6 +36,8 @@ public class homepage1 extends AppCompatActivity {
     ImageButton studiekort;
     ImageButton settings;
 
+    ImageButton search;
+
 
     GridView gridView;
 
@@ -272,6 +274,19 @@ public class homepage1 extends AppCompatActivity {
                 loadSettings();
             }
         });
+
+        search = findViewById(R.id.searchBtn);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSearch();
+            }
+        });
+    }
+
+    private void loadSearch() {
+        Intent searchIntent = new Intent(this,search.class);
+        startActivity(searchIntent);
     }
 
     private void loadKategori() {

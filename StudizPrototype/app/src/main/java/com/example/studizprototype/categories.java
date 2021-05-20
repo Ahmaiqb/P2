@@ -3,6 +3,7 @@ package com.example.studizprototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,6 +13,8 @@ public class categories extends AppCompatActivity {
     ImageButton home;
     ImageButton studiekort;
     ImageButton settings;
+
+    ImageButton search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,6 +13,8 @@ public class Studiekort extends AppCompatActivity {
     ImageButton kategorier;
     ImageButton settings;
 
+    ImageButton search;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,9 +43,22 @@ public class Studiekort extends AppCompatActivity {
                     loadSettings();
                 }
             });
+
+            search = findViewById(R.id.searchBtn);
+            search.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    loadSearch();
+                }
+            });
         }
 
-        private void loadHome() {
+    private void loadSearch() {
+        Intent searchIntent = new Intent(this,search.class);
+        startActivity(searchIntent);
+    }
+
+    private void loadHome() {
             Intent home = new Intent(this,homepage1.class);
             startActivity(home);
         }

@@ -21,6 +21,8 @@ public class transport extends AppCompatActivity {
     ImageButton settings;
     ImageButton kategorier;
 
+    ImageButton search;
+
     GridView gridView;
 
     String[] names = {
@@ -122,6 +124,19 @@ public class transport extends AppCompatActivity {
                 loadSettings();
             }
         });
+
+        search = findViewById(R.id.searchBtn);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSearch();
+            }
+        });
+    }
+
+    private void loadSearch() {
+        Intent searchIntent = new Intent(this,search.class);
+        startActivity(searchIntent);
     }
     //Bottom menu button functions
     private void loadHome() {

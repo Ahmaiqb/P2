@@ -3,6 +3,7 @@ package com.example.studizprototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,6 +13,8 @@ public class Settings extends AppCompatActivity {
     ImageButton home;
     ImageButton kategorier;
     ImageButton studiekort;
+
+    ImageButton search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,19 @@ public class Settings extends AppCompatActivity {
                 loadStudiekort();
             }
         });
+
+        search = findViewById(R.id.searchBtn);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSearch();
+            }
+        });
+    }
+
+    private void loadSearch() {
+        Intent searchIntent = new Intent(this,search.class);
+        startActivity(searchIntent);
     }
 
     private void loadHome() {

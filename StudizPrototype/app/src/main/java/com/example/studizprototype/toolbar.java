@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class toolbar extends homepage1 {
 
     ImageButton search;
-    ImageButton map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,24 +25,10 @@ public class toolbar extends homepage1 {
             }
         });
 
-        map = findViewById(R.id.kortIcon);
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadMap();
-            }
-        });
-
     }
 
     private void loadSearch() {
         Intent Search = new Intent(this,search.class);
         startActivity(Search);
     }
-
-    private void loadMap() {
-        Intent Map = new Intent(this,homepage1.class);
-        startActivity(Map);
-    }
-
 }
