@@ -90,7 +90,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/studizlys"
-            android:src="@drawable/ic_baseline_perm_identity_hvidkant" />
+            android:src="@drawable/studiekort_logo2"
+            android:scaleType="centerInside"/>
 
         <ImageButton
             android:id="@+id/settingsBtn"
