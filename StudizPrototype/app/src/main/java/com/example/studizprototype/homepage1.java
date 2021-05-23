@@ -198,10 +198,10 @@ public class homepage1 extends AppCompatActivity {
     };
 
     String[] discount = {
-            "H&M", "adidas", "Adobe",
-            "Airbnb", "Warner books", "Bacardi",
-            "Mcdonald's", "Academic books", "Apple",
-            "Heineken", "KFC", "Føtex"
+            "25%", "20%", "15%",
+            "10%", "10%", "25%",
+            "10%", "15%", "10%",
+            "20%", "15%", "20%"
     };
 
 
