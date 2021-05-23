@@ -19,6 +19,9 @@ import android.net.Uri;
 import java.net.URI;
 
 public class ClickedItemActivity extends AppCompatActivity {
+
+    ImageButton goBack;
+
     ImageButton home;
     ImageButton studiekort;
     ImageButton settings;
@@ -94,8 +97,13 @@ public class ClickedItemActivity extends AppCompatActivity {
          manager.createNotificationChannel(channel);
     }
 
-
-
+        goBack = findViewById(R.id.back);
+        goBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadSearch();
+            }
+        });
 
         //Bottom menu buttons start here
         home = findViewById(R.id.homeBtn);
@@ -131,6 +139,12 @@ public class ClickedItemActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void loadSearch() {
+        Intent back = new Intent(this,search.class);
+        startActivity(back);
+    }
+
     //Bottom menu button functions
     private void loadHome() {
         Intent home = new Intent(this,homepage1.class);
