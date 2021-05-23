@@ -38,7 +38,16 @@ public class restaurant extends AppCompatActivity {
 
     String[] descriptions = {
             "Burger King", "Domino's Pizza", "Dunkin' Donuts",
-            "MCD", "Molino Pizza", "Teté", "KFC", "YO! Sushi"
+            "MCD", "Molino Pizza", "Teté", "\"KFC kom til Danmark i 70'erne, hvor de åbnede deres\\n\" +\n" +
+            "                    \"første restaurant i Rødovre. I dag har KFC 6 restauranter\\n\" +\n" +
+            "                    \"i Storkøbenhavn, 2 i Odense, 1 i Herning og 1 i Tilst.\\n\" +\n" +
+            "                    \"\\n\" +\n" +
+            "                    \"Så hvis du er sulten efter noget lækkert kylling, så tag et\\n\" +\n" +
+            "                    \"kig på deres hjemmeside og bestil med 15% rabat.\\n\" +\n" +
+            "                    \"\\n\" +\n" +
+            "                    \" Placeringer:\\n\" +\n" +
+            "                    \"   - Online Bestilling\\n\" +\n" +
+            "                    \"   - Rådhuspladsen 55, 1550 København V\",", "YO! Sushi"
     };
 
     String[] url = {
