@@ -101,7 +101,7 @@ public class ClickedItemActivity extends AppCompatActivity {
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadSearch();
+                loadHome();
             }
         });
 
