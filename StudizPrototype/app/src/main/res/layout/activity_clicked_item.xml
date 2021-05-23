@@ -28,21 +28,22 @@
 
     </LinearLayout>
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="218dp"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@+id/linearLayout2"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
         android:scaleType="centerInside"
         android:src="@mipmap/ic_launcher" />
 
@@ -50,27 +51,26 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/imageView"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="-266dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
         android:text="Name"
         android:textColor="#328FC4"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-
     <TextView
         android:id="@+id/descriptiontext"
         android:layout_width="343dp"
         android:layout_height="255dp"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="285dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
         android:text="TextView" />
 
     <Button
@@ -82,7 +82,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="15dp"
         android:text="@string/hjemmeside"
         app:backgroundTint="#328FC4" />
 
@@ -93,7 +93,7 @@
         android:layout_below="@+id/descriptiontext"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:text="@string/maps"
