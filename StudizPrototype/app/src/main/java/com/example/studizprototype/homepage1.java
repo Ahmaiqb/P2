@@ -190,7 +190,7 @@ public class homepage1 extends AppCompatActivity {
             //academic books
             "https://www.google.dk/maps/dir//Academic+Books,+Nørre+Allé+20,+2200+København/@55.6849174,12.5682881,14z/data=!4m17!1m7!3m6!1s0x0:0x289fb4247c47c00e!2sAcademic+Books!8m2!3d55.694794!4d12.5616377!15sCg5hY2FkZW1pYyBib29rcyIDiAEBkgEKYm9va19zdG9yZQ!4m8!1m0!1m5!1m1!1s0x46525300255f6c2f:0x289fb4247c47c00e!2m2!1d12.5616377!2d55.694794!3e3",
             //apple
-            "www.google.dk/maps",
+            "https://www.google.com/maps/search/apple/@57.0491716,9.9319808,13z/data=!3m1!4b1",
             //heineken
             "www.google.dk/maps",
             //?
